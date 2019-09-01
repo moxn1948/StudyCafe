@@ -22,7 +22,7 @@ public class Login extends JPanel{
 		this.mf = mf;
 		mainpage = this;
 		
-		//======= »ö ¼³Á¤ ====
+		//======= ìƒ‰ ì„¤ì • ====
 		
 		Color wallPapers = new Color(239,234,222);
 		Color textColor = new Color(127,118,104);
@@ -30,40 +30,40 @@ public class Login extends JPanel{
 		//=================
 		
 		
-		//================ Frame ¼³Á¤ ======================
+		//================ Frame ì„¤ì • ======================
 		this.setSize(360,640);
 		this.setLayout(null);
 		this.setBackground(wallPapers);
 		//================================================
 		
-		//============== font ¼³Á¤ =========
+		//============== font ì„¤ì • =========
 		
 		Font f1 = new Font("Noto Sans KR",Font.BOLD,25);
 		
 		//============================
 		
-		// panel Å©±â Á¶Àı
+		// panel í¬ê¸° ì¡°ì ˆ
 		
-		//============== Á¦¸ñ ¼³Á¤ ºÎºĞ ========================
+		//============== ì œëª© ì„¤ì • ë¶€ë¶„ ========================
 		
-		JLabel title1 = new JLabel("½ºÅÍµğÄ«Æä ´Ù´Ï°í");
-		JLabel title2 = new JLabel("³ªÀÇ ¼º°ø½Ã´ë");
-		JLabel title3 = new JLabel("½ÃÀÛµÆ´Ù");
+		JLabel title1 = new JLabel("ìŠ¤í„°ë””ì¹´í˜ ë‹¤ë‹ˆê³ ");
+		JLabel title2 = new JLabel("ë‚˜ì˜ ì„±ê³µì‹œëŒ€");
+		JLabel title3 = new JLabel("ì‹œì‘ëë‹¤");
 		
-		title1.setBounds(65,150,600,60);// Å©±â Á¶Àı
-		title1.setForeground(textColor);// »ö»ó
+		title1.setBounds(65,150,600,60);// í¬ê¸° ì¡°ì ˆ
+		title1.setForeground(textColor);// ìƒ‰ìƒ
 		title2.setBounds(65,180,600,60);
 		title2.setForeground(textColor);
 		title3.setBounds(65,210,600,60);
 		title3.setForeground(textColor);
 		
-		// font ¼³Á¤
+		// font ì„¤ì •
 		title1.setFont(f1);
 		title2.setFont(f1);
 		title3.setFont(f1);
 		//=================================================
 		
-		//==================== ÅØ½ºÆ® ÇÊµå ¼³Á¤ ==============
+		//==================== í…ìŠ¤íŠ¸ í•„ë“œ ì„¤ì • ==============
 		
 		JTextField phonenumber = new JTextField("Phone Number");
 		JTextField password = new JTextField("password.");
@@ -77,7 +77,7 @@ public class Login extends JPanel{
 		
 		//===================================================
 		
-		//===============  ¹öÆ° ¼³Á¤ =================
+		//===============  ë²„íŠ¼ ì„¤ì • =================
 		
 		Image loginicon = new ImageIcon("img/loginimg.png").getImage().getScaledInstance(230, 50, 0);
 		Image singUpicon = new ImageIcon("img/singUpimg.png").getImage().getScaledInstance(110, 40, 0);
@@ -88,7 +88,7 @@ public class Login extends JPanel{
 		JButton findPwd = new JButton(new ImageIcon(findPwdicon));
 		findPwd.setBorderPainted(false);
 		
-		loginButton.setBounds(65,365,230,50); //·Î±×ÀÎ ¹öÆ° Å©±â Á¶Àı
+		loginButton.setBounds(65,365,230,50); //ë¡œê·¸ì¸ ë²„íŠ¼ í¬ê¸° ì¡°ì ˆ
 		signUp.setBounds(65,420,110,40);
 		findPwd.setBounds(185,420,110,40);
 		

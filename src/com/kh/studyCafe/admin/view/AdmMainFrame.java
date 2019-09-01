@@ -4,12 +4,12 @@ import javax.swing.JFrame;
 
 public class AdmMainFrame extends JFrame{
 	
-	// ¸ŞÀÎ ÇÁ·¹ÀÓ
+	// ë©”ì¸ í”„ë ˆì„
 	public AdmMainFrame() {
 		this.setBounds(0, 0, 978, 700); 
 		this.setLayout(null);
 		
-		new AdmLoginMain(this); // ÇÁ·Î±×·¥ ½ÇÇà ½Ã Ã¹¹øÂ° ÆäÀÌÁö
+		new AdmLoginMain(this); // í”„ë¡œê·¸ë¨ ì‹¤í–‰ ì‹œ ì²«ë²ˆì§¸ í˜ì´ì§€
 		
 		this.setVisible(true);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

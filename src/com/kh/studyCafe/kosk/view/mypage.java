@@ -16,41 +16,41 @@ public class mypage extends JPanel{
 	public mypage() {
 		this.setSize(360,640);
 		
-		//===== »ö»ó ¼³Á¤ =====
+		//===== ìƒ‰ìƒ ì„¤ì • =====
 		Color wallPapers = new Color(239,234,222);
 		Color textColor = new Color(127,118,104);
 				
 		//===============
 				
-		//===== JPanel ¼³Á¤ =======
+		//===== JPanel ì„¤ì • =======
 		this.setLayout(null);
 		this.setBackground(wallPapers);
 		//=======================
 				
-		//============ font ¼³Á¤ ==========
+		//============ font ì„¤ì • ==========
 		Font siguptext = new Font("Noto Sans KR",Font.BOLD,30);
 		Font inputtext = new Font("Noto Sans KR",Font.BOLD,17);
 		Font checktext = new Font("Noto Sans KR",Font.BOLD,14);
 	
 		//===============================
 		
-		//==== ½ºÅÍµğ Ä«Æä ¾ÆÀÌÄÜ ¼³Á¤ ===============
+		//==== ìŠ¤í„°ë”” ì¹´í˜ ì•„ì´ì½˜ ì„¤ì • ===============
 		Image imgicon = new ImageIcon("img/imgicon.png").getImage().getScaledInstance(60, 80, 0);
-		JLabel ib = new JLabel("  ¸¶ÀÌ ÆäÀÌÁö",(new ImageIcon(imgicon)),SwingUtilities.CENTER);
+		JLabel ib = new JLabel("  ë§ˆì´ í˜ì´ì§€",(new ImageIcon(imgicon)),SwingUtilities.CENTER);
 		ib.setBounds(10,0,250,80);
 		ib.setForeground(textColor);
 		ib.setFont(siguptext);
 		//===============================
 		
-		//==== ÀÔ·Â¶õ =================
+		//==== ì…ë ¥ë€ =================
 		
-		 JLabel name = new JLabel("ÀÌ¸§"); //ÀÌ¸§ ¶óº§
+		 JLabel name = new JLabel("ì´ë¦„"); //ì´ë¦„ ë¼ë²¨
 		   name.setBounds(30, 100, 40, 30);
 		   name.setFont(inputtext);
 		   name.setForeground(textColor);
 		   
-		   JLabel phnumber = new JLabel("ÈŞ´ëÆù");
-		   JLabel phnumber2 = new JLabel("¹øÈ£");
+		   JLabel phnumber = new JLabel("íœ´ëŒ€í°");
+		   JLabel phnumber2 = new JLabel("ë²ˆí˜¸");
 		   phnumber.setBounds(30,160,60,30);
 		   phnumber2.setBounds(30,180,60,30);
 		   phnumber.setFont(inputtext);
@@ -58,56 +58,56 @@ public class mypage extends JPanel{
 		   phnumber.setForeground(textColor);
 		   phnumber2.setForeground(textColor);
 		   
-		   JLabel hou1 = new JLabel("ÀÌ¿ë°¡´É½Ã°£");
+		   JLabel hou1 = new JLabel("ì´ìš©ê°€ëŠ¥ì‹œê°„");
 		   hou1.setBounds(30,220,80,30);
 		   hou1.setForeground(textColor);
 		   hou1.setFont(inputtext);
 		   
-		   JLabel atime1 = new JLabel("ÀÔ½Ç½Ã°£");
+		   JLabel atime1 = new JLabel("ì…ì‹¤ì‹œê°„");
 		   atime1.setBounds(30,280,80,30);
 		   atime1.setForeground(textColor);
 		   atime1.setFont(inputtext);
 		   
-		   JLabel dtime1 = new JLabel("Åğ½Ç½Ã°£");
+		   JLabel dtime1 = new JLabel("í‡´ì‹¤ì‹œê°„");
 		   dtime1.setBounds(30,340,80,30);
 		   dtime1.setForeground(textColor);
 		   dtime1.setFont(inputtext);
 		   
-		   JLabel point1 = new JLabel("Æ÷ÀÎÅÍ");
+		   JLabel point1 = new JLabel("í¬ì¸í„°");
 		   point1.setBounds(30,400,80,30);
 		   point1.setForeground(textColor);
 		   point1.setFont(inputtext);
 		   
-		   JLabel rating1 = new JLabel("µî±Ş");
+		   JLabel rating1 = new JLabel("ë“±ê¸‰");
 		   rating1.setBounds(30,460,80,30);
 		   rating1.setForeground(textColor);
 		   rating1.setFont(inputtext);
 		   
 		 
 		   
-		   JTextField nametf = new JTextField("³»¿ëÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+		   JTextField nametf = new JTextField("ë‚´ìš©ì„ ì…ë ¥í•˜ì„¸ìš”");
 		   nametf.setBounds(120,100,200,40);
 		   
-		   JTextField phtf = new JTextField("³»¿ëÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+		   JTextField phtf = new JTextField("ë‚´ìš©ì„ ì…ë ¥í•˜ì„¸ìš”");
 		   phtf.setBounds(120,160,200,40);
 		   
-		   JTextField hou = new JTextField("³»¿ëÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+		   JTextField hou = new JTextField("ë‚´ìš©ì„ ì…ë ¥í•˜ì„¸ìš”");
 		   hou.setBounds(120,220,200,40);
 		   
-		   JTextField atime = new JTextField("³»¿ëÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+		   JTextField atime = new JTextField("ë‚´ìš©ì„ ì…ë ¥í•˜ì„¸ìš”");
 		   atime.setBounds(120,280,200,40);
 		   
-		   JTextField dtime = new JTextField("³»¿ëÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+		   JTextField dtime = new JTextField("ë‚´ìš©ì„ ì…ë ¥í•˜ì„¸ìš”");
 		   dtime.setBounds(120,340,200,40);
 		   
-		   JTextField point = new JTextField("³»¿ëÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+		   JTextField point = new JTextField("ë‚´ìš©ì„ ì…ë ¥í•˜ì„¸ìš”");
 		   point.setBounds(120,400,200,40);
 		   
-		   JTextField rating = new JTextField("³»¿ëÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+		   JTextField rating = new JTextField("ë‚´ìš©ì„ ì…ë ¥í•˜ì„¸ìš”");
 		   rating.setBounds(120,460,200,40);
 		 //======================================
 		   
-		 //=== ¹öÆ° ===========================
+		 //=== ë²„íŠ¼ ===========================
 
 		   Image findimg = new ImageIcon("img/okbtnimg.png").getImage().getScaledInstance(100, 40, 0);
 		   

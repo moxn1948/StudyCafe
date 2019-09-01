@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 public class AdmExitTimeHour extends JPanel implements ActionListener{
 	
 	public AdmExitTimeHour() {
-		// ÆĞ³Î ¼³Á¤
+		// íŒ¨ë„ ì„¤ì •
 		int w = 410;
 		int h = 250;
 		int x = popPosition(w, h)[0];
@@ -23,31 +23,31 @@ public class AdmExitTimeHour extends JPanel implements ActionListener{
 		this.setBackground(new Color(239, 234, 222));
 		this.setBorder(BorderFactory.createLineBorder(new Color(189, 177, 157)));
 		
-		// title ÅØ½ºÆ® ¼³Á¤
-		JLabel title = new JLabel("1ÀÏ±Ç Åğ½Ç");
+		// title í…ìŠ¤íŠ¸ ì„¤ì •
+		JLabel title = new JLabel("1ì¼ê¶Œ í‡´ì‹¤");
 
 		title.setLocation(124, 34);
 		title.setForeground(new Color(127, 118, 104));
-		title.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 32));
+		title.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 32));
 		title.setSize(title.getPreferredSize());
 		
-		// subTitle ÅØ½ºÆ® ¼³Á¤
-		JLabel subTitle = new JLabel("ÀÜ¿©½Ã°£");
+		// subTitle í…ìŠ¤íŠ¸ ì„¤ì •
+		JLabel subTitle = new JLabel("ì”ì—¬ì‹œê°„");
 
 		subTitle.setLocation(106, 104);
 		subTitle.setForeground(new Color(127, 118, 104));
-		subTitle.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 24));
+		subTitle.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 24));
 		subTitle.setSize(subTitle.getPreferredSize());
 		
-		// ÀÜ¿©½Ã°£ ÅØ½ºÆ® ¼³Á¤
-		JLabel remainTime = new JLabel("02:30"); // ³ªÁß¿¡ µ¥ÀÌÅÍ ¹Ş¾Æ¼­ °ª ¿Ã·Á¾ßÇÔ
+		// ì”ì—¬ì‹œê°„ í…ìŠ¤íŠ¸ ì„¤ì •
+		JLabel remainTime = new JLabel("02:30"); // ë‚˜ì¤‘ì— ë°ì´í„° ë°›ì•„ì„œ ê°’ ì˜¬ë ¤ì•¼í•¨
 
 		remainTime.setLocation(230, 104);
 		remainTime.setForeground(new Color(127, 118, 104));
-		remainTime.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 24));
+		remainTime.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 24));
 		remainTime.setSize(remainTime.getPreferredSize());
 		
-		// ¹öÆ° ¼³Á¤
+		// ë²„íŠ¼ ì„¤ì •
 		JButton cancelBtn = new JButton("Cancel");
 		JButton confirmBtn = new JButton("Confirm");
 		
@@ -56,13 +56,13 @@ public class AdmExitTimeHour extends JPanel implements ActionListener{
 		cancelBtn.setBackground(new Color(189, 177, 157));
 		confirmBtn.setBackground(new Color(163, 152, 134));
 		cancelBtn.setForeground(Color.WHITE);
-		cancelBtn.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 18));
+		cancelBtn.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 18));
 		confirmBtn.setForeground(Color.WHITE);
-		confirmBtn.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 18));
+		confirmBtn.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 18));
 		cancelBtn.setBorder(BorderFactory.createLineBorder(new Color(189, 177, 157)));
 		confirmBtn.setBorder(BorderFactory.createLineBorder(new Color(163, 152, 134)));
 		
-		// ÆĞ³Î¿¡ ¿Ã¸®±â
+		// íŒ¨ë„ì— ì˜¬ë¦¬ê¸°
 		this.add(title);
 		this.add(subTitle);
 		this.add(remainTime);

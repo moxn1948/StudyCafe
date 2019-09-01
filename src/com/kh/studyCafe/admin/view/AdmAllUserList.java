@@ -31,25 +31,25 @@ public class AdmAllUserList extends JPanel implements ActionListener {
 
 	public AdmAllUserList() {
 
-		//Å×ÀÌºí Çì´õ ¸ñ·Ï
-		String[] columnNames = {"No", "È¸¿ø¸í", "ÀüÈ­¹øÈ£", "ÁÂ¼®¹øÈ£", "ÀÔ½Ç½Ã°£", "Åğ½Ç¿¹Á¤½Ã°£", "ÀÜ¿©½Ã°£", "°³ÀÎ/´ÜÃ¼", "ÁÂ¼®°ü¸®","ÁÂ¼®°ü¸®","ÁÂ¼®°ü¸®","ÁÂ¼®°ü¸®" };
+		//í…Œì´ë¸” í—¤ë” ëª©ë¡
+		String[] columnNames = {"No", "íšŒì›ëª…", "ì „í™”ë²ˆí˜¸", "ì¢Œì„ë²ˆí˜¸", "ì…ì‹¤ì‹œê°„", "í‡´ì‹¤ì˜ˆì •ì‹œê°„", "ì”ì—¬ì‹œê°„", "ê°œì¸/ë‹¨ì²´", "ì¢Œì„ê´€ë¦¬","ì¢Œì„ê´€ë¦¬","ì¢Œì„ê´€ë¦¬","ì¢Œì„ê´€ë¦¬" };
 
-		//Å×ÀÌºí ³»¿ë
+		//í…Œì´ë¸” ë‚´ìš©
 		Object[][] data = {
-				{1, "¼­¹ü¼ö", "010-9876-6543", "12¹ø", "02:30AM", "-", "25ÀÏ", "°³ÀÎ", "¿¬Àå","ÀÌµ¿","Åğ½Ç","ÀÔ½Ç"},
-				{2, "Á¶¹®Á¤", "010-2222-3333", "4-B·ë", "09:30AM", "11:30AM", "02:00", "´ÜÃ¼", "¿¬Àå","ÀÌµ¿","Åğ½Ç","ÀÔ½Ç"},
-				{3, "ÇãÇöÁÖ", "010-4321-1234", "23¹ø", "08:10AM", "12:10PM", "03:00", "°³ÀÎ", "¿¬Àå","ÀÌµ¿","Åğ½Ç","ÀÔ½Ç"},
-				{4, "±èÁøÈ£", "010-5050-5858", "14¹ø", "-", "-", "10ÀÏ", "°³ÀÎ", "¿¬Àå","ÀÌµ¿","Åğ½Ç","ÀÔ½Ç"},
-				{1, "¹®È£½Â", "010-7895-5555", "-", "-", "-", "-", "-", "¿¬Àå","ÀÌµ¿","Åğ½Ç","ÀÔ½Ç"},
-				{2, "¾Èµ¿È¯", "010-1111-1111", "-", "-", "-", "-", "-", "¿¬Àå","ÀÌµ¿","Åğ½Ç","ÀÔ½Ç"},
-				{3, "ÀÌ¹üÈñ", "010-5656-4545", "-", "-", "-", "-", "-", "¿¬Àå","ÀÌµ¿","Åğ½Ç","ÀÔ½Ç"}
+				{1, "ì„œë²”ìˆ˜", "010-9876-6543", "12ë²ˆ", "02:30AM", "-", "25ì¼", "ê°œì¸", "ì—°ì¥","ì´ë™","í‡´ì‹¤","ì…ì‹¤"},
+				{2, "ì¡°ë¬¸ì •", "010-2222-3333", "4-Bë£¸", "09:30AM", "11:30AM", "02:00", "ë‹¨ì²´", "ì—°ì¥","ì´ë™","í‡´ì‹¤","ì…ì‹¤"},
+				{3, "í—ˆí˜„ì£¼", "010-4321-1234", "23ë²ˆ", "08:10AM", "12:10PM", "03:00", "ê°œì¸", "ì—°ì¥","ì´ë™","í‡´ì‹¤","ì…ì‹¤"},
+				{4, "ê¹€ì§„í˜¸", "010-5050-5858", "14ë²ˆ", "-", "-", "10ì¼", "ê°œì¸", "ì—°ì¥","ì´ë™","í‡´ì‹¤","ì…ì‹¤"},
+				{1, "ë¬¸í˜¸ìŠ¹", "010-7895-5555", "-", "-", "-", "-", "-", "ì—°ì¥","ì´ë™","í‡´ì‹¤","ì…ì‹¤"},
+				{2, "ì•ˆë™í™˜", "010-1111-1111", "-", "-", "-", "-", "-", "ì—°ì¥","ì´ë™","í‡´ì‹¤","ì…ì‹¤"},
+				{3, "ì´ë²”í¬", "010-5656-4545", "-", "-", "-", "-", "-", "ì—°ì¥","ì´ë™","í‡´ì‹¤","ì…ì‹¤"}
 		};
 
-		//this.Àº panel ¼³Á¤
+		//this.ì€ panel ì„¤ì •
 		this.setBounds(0, 0, 978, 700);
 
-		//Å×ÀÌºí ¸ğµ¨¸¸µé±â
-		//¹öÆ°ºÎºĞ»©°í ¼¿ÀÇ ³»¿ë ¼öÁ¤ºÒ°¡ÇÏµµ·Ï ¼³Á¤
+		//í…Œì´ë¸” ëª¨ë¸ë§Œë“¤ê¸°
+		//ë²„íŠ¼ë¶€ë¶„ë¹¼ê³  ì…€ì˜ ë‚´ìš© ìˆ˜ì •ë¶ˆê°€í•˜ë„ë¡ ì„¤ì •
 		DefaultTableModel model = new DefaultTableModel(data,columnNames) {
 			public boolean isCellEditable(int row, int column){
 				if(column >= 8) {
@@ -61,9 +61,9 @@ public class AdmAllUserList extends JPanel implements ActionListener {
 
 		this.setLayout(null);
 		this.setBackground(Color.WHITE);
-		//Å×ÀÌºí »ı¼º
-		//ÀÌ¿ëÁßÀÎ È¸¿øÀÏ °æ¿ì ¼¿ÀÇ »öÀ» ¹Ù²Ù¾î¼­ Ç¥½ÃÇÔ
-		//¹öÆ° ºÎºĞÀº ¹é±×¶ó¿îµå »öÀ¸·Î Èò»öÀ¸·Î Ä¥ÇÏ¿© ¾ø´Â°ÍÃ³·³ º¸ÀÌ°Ô ÇØ³õ¾ÒÀ¸³ª ¼öÁ¤ÀÌÇÊ¿äÇÔ
+		//í…Œì´ë¸” ìƒì„±
+		//ì´ìš©ì¤‘ì¸ íšŒì›ì¼ ê²½ìš° ì…€ì˜ ìƒ‰ì„ ë°”ê¾¸ì–´ì„œ í‘œì‹œí•¨
+		//ë²„íŠ¼ ë¶€ë¶„ì€ ë°±ê·¸ë¼ìš´ë“œ ìƒ‰ìœ¼ë¡œ í°ìƒ‰ìœ¼ë¡œ ì¹ í•˜ì—¬ ì—†ëŠ”ê²ƒì²˜ëŸ¼ ë³´ì´ê²Œ í•´ë†“ì•˜ìœ¼ë‚˜ ìˆ˜ì •ì´í•„ìš”í•¨
 		JTable table = new JTable(model) {
 			@Override
 			public Component prepareRenderer(TableCellRenderer renderer, int row, int column) {
@@ -86,17 +86,17 @@ public class AdmAllUserList extends JPanel implements ActionListener {
 			}
 		};
 
-		//ÀÌ¹ÌÁö ÆÄÀÏ ºÒ·¯¿À±â
+		//ì´ë¯¸ì§€ íŒŒì¼ ë¶ˆëŸ¬ì˜¤ê¸°
 		Image icon = new ImageIcon("images/logo.PNG").getImage().getScaledInstance(41, 54, 0);
 		JLabel logoLabel = new JLabel(new ImageIcon(icon));
 		logoLabel.setLocation(470, 35);
 		logoLabel.setSize(41, 54);
 		JTableHeader header = table.getTableHeader();
 
-		//Å×ÀÌºí Çì´õ Å©±â¼³Á¤		
+		//í…Œì´ë¸” í—¤ë” í¬ê¸°ì„¤ì •		
 		header.setPreferredSize(new Dimension(10, 50));
 
-		//Å×ÀÌºí Çà ³ôÀÌ ¼³Á¤
+		//í…Œì´ë¸” í–‰ ë†’ì´ ì„¤ì •
 		table.setRowHeight(40);
 
 		table.getColumnModel().getColumn(0).setPreferredWidth(36);
@@ -112,12 +112,12 @@ public class AdmAllUserList extends JPanel implements ActionListener {
 		table.getColumnModel().getColumn(10).setPreferredWidth(68);
 		table.getColumnModel().getColumn(11).setPreferredWidth(68);
 
-		//Å×ÀÌºí ½ºÅ©·Ñ ±â´É Ãß°¡ÇØ¼­ ³Ö±â
+		//í…Œì´ë¸” ìŠ¤í¬ë¡¤ ê¸°ëŠ¥ ì¶”ê°€í•´ì„œ ë„£ê¸°
 		JScrollPane scrollpane = new JScrollPane(table);
 
-		//ÀüÃ¼ Å×ÀÌºí Å©±â¼³Á¤
+		//ì „ì²´ í…Œì´ë¸” í¬ê¸°ì„¤ì •
 		scrollpane.setPreferredSize(new Dimension(920, 504));
-		//Å×ÀÌºí ¸ğ¾ç ¼³Á¤rgb(239, 234, 222)
+		//í…Œì´ë¸” ëª¨ì–‘ ì„¤ì •rgb(239, 234, 222)
 		scrollpane.setBounds(21, 118, 920, 504);
 		scrollpane.getViewport().setBackground(Color.WHITE); 
 		scrollpane.setBackground(Color.WHITE);
@@ -125,40 +125,40 @@ public class AdmAllUserList extends JPanel implements ActionListener {
 		table.setBorder(BorderFactory.createCompoundBorder(BorderFactory.createCompoundBorder(), BorderFactory.createMatteBorder(0,1,1,1,new Color(127,118,104))));
 		table.setGridColor(new Color(127,118,104));
 		table.setForeground(new Color(127, 118, 104)); 		
-		table.setFont(new Font("¸¼Àº °íµñ", Font.PLAIN, 14));
-		//Å×ÀÌºí Çì´õ ¼³Á¤
+		table.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.PLAIN, 14));
+		//í…Œì´ë¸” í—¤ë” ì„¤ì •
 		header.setBorder(BorderFactory.createLineBorder(new Color(127,118,104)));
 		header.setForeground(new Color(127, 118, 104)); 		
-		header.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 14));
+		header.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 14));
 		header.setBackground(Color.WHITE);
 
 
-		// DefaultTableCellHeaderRenderer »ı¼º (°¡¿îµ¥ Á¤·ÄÀ» À§ÇÑ)
+		// DefaultTableCellHeaderRenderer ìƒì„± (ê°€ìš´ë° ì •ë ¬ì„ ìœ„í•œ)
 		DefaultTableCellRenderer tScheduleCellRenderer = new DefaultTableCellRenderer();
-		// DefaultTableCellHeaderRendererÀÇ Á¤·ÄÀ» °¡¿îµ¥ Á¤·Ä·Î ÁöÁ¤
+		// DefaultTableCellHeaderRendererì˜ ì •ë ¬ì„ ê°€ìš´ë° ì •ë ¬ë¡œ ì§€ì •
 		tScheduleCellRenderer.setHorizontalAlignment(SwingConstants.CENTER);
-		// Á¤·ÄÇÒ Å×ÀÌºíÀÇ ColumnModelÀ» °¡Á®¿È
+		// ì •ë ¬í•  í…Œì´ë¸”ì˜ ColumnModelì„ ê°€ì ¸ì˜´
 		TableColumnModel tcmSchedule = table.getColumnModel();
-		// ¹İº¹¹®À» ÀÌ¿ëÇÏ¿© Å×ÀÌºíÀ» °¡¿îµ¥ Á¤·Ä·Î ÁöÁ¤
+		// ë°˜ë³µë¬¸ì„ ì´ìš©í•˜ì—¬ í…Œì´ë¸”ì„ ê°€ìš´ë° ì •ë ¬ë¡œ ì§€ì •
 		for (int i = 0; i < tcmSchedule.getColumnCount(); i++) {
 			tcmSchedule.getColumn(i).setCellRenderer(tScheduleCellRenderer);
 		}
 
 
-		//ÀüÃ¼ È¸¿øº¸±â ¹öÆ°»ı¼º
-		JButton allUserInfoButton = new JButton("ÀÌ¿ë ÁßÀÎ È¸¿ø º¸±â");
+		//ì „ì²´ íšŒì›ë³´ê¸° ë²„íŠ¼ìƒì„±
+		JButton allUserInfoButton = new JButton("ì´ìš© ì¤‘ì¸ íšŒì› ë³´ê¸°");
 		allUserInfoButton.setBounds(780, 70, 160, 42);
 		allUserInfoButton.setBackground(new Color(189,177,157));
 		allUserInfoButton.setForeground(Color.WHITE);
-		allUserInfoButton.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 15));
+		allUserInfoButton.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 15));
 		allUserInfoButton.setBorder(BorderFactory.createLineBorder(new Color(189,177,157)));
 		
 		
-		//Å×ÀÌºíÀÇ Å©±â¸¦ Á¶ÀıÇÏÁö ¸øÇÏµµ·Ï ÇÔ
+		//í…Œì´ë¸”ì˜ í¬ê¸°ë¥¼ ì¡°ì ˆí•˜ì§€ ëª»í•˜ë„ë¡ í•¨
 		table.getTableHeader().setReorderingAllowed(false);
 		table.getTableHeader().setResizingAllowed(false);
 		
-		//Å×ÀÌºí ¿¬Àå / ÀÌµ¿ / Åğ½Ç ¿­¿¡ ¹öÆ°À» »ı¼ºÇÔ
+		//í…Œì´ë¸” ì—°ì¥ / ì´ë™ / í‡´ì‹¤ ì—´ì— ë²„íŠ¼ì„ ìƒì„±í•¨
 		table.getColumnModel().getColumn(8).setCellRenderer(new AddTime());
 		table.getColumnModel().getColumn(8).setCellEditor(new AddTime());
 
@@ -172,18 +172,18 @@ public class AdmAllUserList extends JPanel implements ActionListener {
 		table.getColumnModel().getColumn(11).setCellEditor(new EnterSeat());
 
 		
-		//È¸¿ø°Ë»ö¿ë ÅØ½ºÆ® ÇÊµå »ı¼º
+		//íšŒì›ê²€ìƒ‰ìš© í…ìŠ¤íŠ¸ í•„ë“œ ìƒì„±
 		JTextField searchForm = new JTextField();
 		searchForm.setBounds(59, 74, 178, 40);
 		searchForm.setBorder(BorderFactory.createLineBorder(new Color(127,118,104)));
 
-		//È¸¿ø°Ë»ö¿ë ÀÌ¹ÌÁö ÆÄÀÏ ºÒ·¯¿À±â
+		//íšŒì›ê²€ìƒ‰ìš© ì´ë¯¸ì§€ íŒŒì¼ ë¶ˆëŸ¬ì˜¤ê¸°
 		Image icon2 = new ImageIcon("images/search.PNG").getImage().getScaledInstance(32, 39, 0);
 		JLabel searchLabel = new JLabel(new ImageIcon(icon2));
 		searchLabel.setLocation(23, 75);
 		searchLabel.setSize(32, 39);
 
-		//ÆĞ³Î¿¡ Ãß°¡ÇÏ±â
+		//íŒ¨ë„ì— ì¶”ê°€í•˜ê¸°
 		this.add(searchForm);
 		this.add(searchLabel);
 		this.add(logoLabel);
@@ -201,15 +201,15 @@ public class AdmAllUserList extends JPanel implements ActionListener {
 
 }
 
-//ÀÔ½Ç ¹öÆ°À» ¸¸µé¶§ ÇÊ¿äÇÑ Å¬·¡½º
+//ì…ì‹¤ ë²„íŠ¼ì„ ë§Œë“¤ë•Œ í•„ìš”í•œ í´ë˜ìŠ¤
 class EnterSeat extends AbstractCellEditor implements TableCellEditor, TableCellRenderer {
 	JButton jb;
 
 	public EnterSeat() {
 
-		jb = new JButton("ÀÔ½Ç");
+		jb = new JButton("ì…ì‹¤");
 		jb.setForeground(Color.WHITE);
-		jb.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 15));
+		jb.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 15));
 		jb.setBackground(new Color(127, 118, 104));
 
 		jb.addActionListener(e -> {

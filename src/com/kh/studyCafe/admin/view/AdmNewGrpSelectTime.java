@@ -15,7 +15,7 @@ public class AdmNewGrpSelectTime extends JPanel implements ActionListener{
 	
 	public AdmNewGrpSelectTime() {
 
-		// ÆĞ³Î ¼³Á¤
+		// íŒ¨ë„ ì„¤ì •
 		int w = 540;
 		int h = 467;
 		int x = popPosition(w, h)[0];
@@ -25,65 +25,65 @@ public class AdmNewGrpSelectTime extends JPanel implements ActionListener{
 		this.setBackground(new Color(239, 234, 222));
 		this.setBorder(BorderFactory.createLineBorder(new Color(189, 177, 157)));
 
-		// title ÅØ½ºÆ® ¼³Á¤
-		JLabel title = new JLabel("1ÀÏ±Ç");
+		// title í…ìŠ¤íŠ¸ ì„¤ì •
+		JLabel title = new JLabel("1ì¼ê¶Œ");
 
 		title.setLocation(230, 34);
 		title.setForeground(new Color(127, 118, 104));
-		title.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 32));
+		title.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 32));
 		title.setSize(title.getPreferredSize());
 
-		// ÀÎ¿ø ÅØ½ºÆ® ¼³Á¤
-		JLabel userCount = new JLabel("ÀÎ¿ø");
+		// ì¸ì› í…ìŠ¤íŠ¸ ì„¤ì •
+		JLabel userCount = new JLabel("ì¸ì›");
 
 		userCount.setLocation(114, 104);
 		userCount.setForeground(new Color(127, 118, 104));
-		userCount.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 28));
+		userCount.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 28));
 		userCount.setSize(userCount.getPreferredSize());
 		
-		// ÃÑ ÀÎ¿ø Ç¥½Ã
-		JLabel totalUserCount = new JLabel("ÃÑ ÀÎ¿ø");
+		// ì´ ì¸ì› í‘œì‹œ
+		JLabel totalUserCount = new JLabel("ì´ ì¸ì›");
 
 		totalUserCount.setLocation(90, 170);
 		totalUserCount.setForeground(new Color(127, 118, 104));
-		totalUserCount.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 20));
+		totalUserCount.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 20));
 		totalUserCount.setSize(totalUserCount.getPreferredSize());
 		
-		// ÃÑ ÀÎ¿ø - ¸í¼ö Ç¥½Ã
-		JLabel totalUserCountNum = new JLabel("2¸í");
+		// ì´ ì¸ì› - ëª…ìˆ˜ í‘œì‹œ
+		JLabel totalUserCountNum = new JLabel("2ëª…");
 
 		totalUserCountNum.setLocation(164, 170);
 		totalUserCountNum.setForeground(new Color(127, 118, 104));
-		totalUserCountNum.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 20));
+		totalUserCountNum.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 20));
 		totalUserCountNum.setSize(totalUserCountNum.getPreferredSize());
 
-		// ÃÑ ½Ã°£ Ç¥½Ã
-		JLabel totalUserTime = new JLabel("ÀÌ¿ëÇÏ½Ç ½Ã°£");
+		// ì´ ì‹œê°„ í‘œì‹œ
+		JLabel totalUserTime = new JLabel("ì´ìš©í•˜ì‹¤ ì‹œê°„");
 
 		totalUserTime.setLocation(300, 170);
 		totalUserTime.setForeground(new Color(127, 118, 104));
-		totalUserTime.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 20));
+		totalUserTime.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 20));
 		totalUserTime.setSize(totalUserTime.getPreferredSize());
 		
-		// ÃÑ ½Ã°£ - ½Ã°£ Ç¥½Ã
+		// ì´ ì‹œê°„ - ì‹œê°„ í‘œì‹œ
 		JLabel totalUserTimeNum = new JLabel("02:00");
 
 		totalUserTimeNum.setLocation(434, 170);
 		totalUserTimeNum.setForeground(new Color(127, 118, 104));
-		totalUserTimeNum.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 20));
+		totalUserTimeNum.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 20));
 		totalUserTimeNum.setSize(totalUserTimeNum.getPreferredSize());
 		
 		
-		// ½Ã°£ ÅØ½ºÆ® ¼³Á¤
-		JLabel userTime = new JLabel("½Ã°£");
+		// ì‹œê°„ í…ìŠ¤íŠ¸ ì„¤ì •
+		JLabel userTime = new JLabel("ì‹œê°„");
 
 		userTime.setLocation(359, 104);
 		userTime.setForeground(new Color(127, 118, 104));
-		userTime.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 28));
+		userTime.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 28));
 		userTime.setSize(userTime.getPreferredSize());
 
 
-		// +, - ¹öÆ° ¼³Á¤
+		// +, - ë²„íŠ¼ ì„¤ì •
 		JButton countUpBtn = new JButton("+");
 		JButton countDownBtn = new JButton("-");
 		
@@ -92,9 +92,9 @@ public class AdmNewGrpSelectTime extends JPanel implements ActionListener{
 		countUpBtn.setBackground(new Color(127, 118, 104));
 		countDownBtn.setBackground(new Color(127, 118, 104));
 		countUpBtn.setForeground(Color.WHITE);
-		countUpBtn.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 30));
+		countUpBtn.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 30));
 		countDownBtn.setForeground(Color.WHITE);
-		countDownBtn.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 30));
+		countDownBtn.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 30));
 		countUpBtn.setBorder(BorderFactory.createLineBorder(new Color(189, 177, 157)));
 		countDownBtn.setBorder(BorderFactory.createLineBorder(new Color(163, 152, 134)));
 
@@ -106,13 +106,13 @@ public class AdmNewGrpSelectTime extends JPanel implements ActionListener{
 		timeUpBtn.setBackground(new Color(127, 118, 104));
 		timeDownBtn.setBackground(new Color(127, 118, 104));
 		timeUpBtn.setForeground(Color.WHITE);
-		timeUpBtn.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 30));
+		timeUpBtn.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 30));
 		timeDownBtn.setForeground(Color.WHITE);
-		timeDownBtn.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 30));
+		timeDownBtn.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 30));
 		timeUpBtn.setBorder(BorderFactory.createLineBorder(new Color(189, 177, 157)));
 		timeDownBtn.setBorder(BorderFactory.createLineBorder(new Color(163, 152, 134)));
 
-		// ÀÎ¿ø Ç¥½Ã
+		// ì¸ì› í‘œì‹œ
 		JTextField countDisplay = new JTextField("2");
 		JTextField timeDisplay = new JTextField("02:00");
 		
@@ -120,7 +120,7 @@ public class AdmNewGrpSelectTime extends JPanel implements ActionListener{
 		countDisplay.setBounds(44, 284, 200, 40);
 		countDisplay.setBackground(Color.WHITE);
 		countDisplay.setForeground(new Color(127, 118, 104));
-		countDisplay.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 22));
+		countDisplay.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 22));
 		countDisplay.setBorder(BorderFactory.createEmptyBorder());
 		countDisplay.setHorizontalAlignment(JTextField.CENTER);
 
@@ -128,13 +128,13 @@ public class AdmNewGrpSelectTime extends JPanel implements ActionListener{
 		timeDisplay.setBounds(294, 284, 200, 40);
 		timeDisplay.setBackground(Color.WHITE);
 		timeDisplay.setForeground(new Color(127, 118, 104));
-		timeDisplay.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 22));
+		timeDisplay.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 22));
 		timeDisplay.setBorder(BorderFactory.createEmptyBorder());
 		timeDisplay.setHorizontalAlignment(JTextField.CENTER);
 		
 		
 		
-		// ¹öÆ° ¼³Á¤
+		// ë²„íŠ¼ ì„¤ì •
 		JButton cancelBtn = new JButton("Cancel");
 		JButton confirmBtn = new JButton("Confirm");
 		
@@ -143,9 +143,9 @@ public class AdmNewGrpSelectTime extends JPanel implements ActionListener{
 		cancelBtn.setBackground(new Color(189, 177, 157));
 		confirmBtn.setBackground(new Color(163, 152, 134));
 		cancelBtn.setForeground(Color.WHITE);
-		cancelBtn.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 18));
+		cancelBtn.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 18));
 		confirmBtn.setForeground(Color.WHITE);
-		confirmBtn.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 18));
+		confirmBtn.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 18));
 		cancelBtn.setBorder(BorderFactory.createLineBorder(new Color(189, 177, 157)));
 		confirmBtn.setBorder(BorderFactory.createLineBorder(new Color(163, 152, 134)));
 		

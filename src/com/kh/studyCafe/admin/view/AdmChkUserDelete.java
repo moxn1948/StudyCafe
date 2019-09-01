@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 public class AdmChkUserDelete extends JPanel implements ActionListener{
 	
 	public AdmChkUserDelete() {
-		// ÆĞ³Î ¼³Á¤
+		// íŒ¨ë„ ì„¤ì •
 		int w = 410;
 		int h = 192;
 		int x = popPosition(w, h)[0];
@@ -24,15 +24,15 @@ public class AdmChkUserDelete extends JPanel implements ActionListener{
 		this.setBackground(new Color(239, 234, 222));
 		this.setBorder(BorderFactory.createLineBorder(new Color(189, 177, 157)));
 		
-		// ¾È³» ¹®±¸ ÅØ½ºÆ® ¼³Á¤
-		JLabel notice = new JLabel("»èÁ¦ÇÏ½Ã°Ú½À´Ï±î?");
+		// ì•ˆë‚´ ë¬¸êµ¬ í…ìŠ¤íŠ¸ ì„¤ì •
+		JLabel notice = new JLabel("ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?");
 
 		notice.setLocation(106, 52);
 		notice.setForeground(new Color(127, 118, 104));
-		notice.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 24));
+		notice.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 24));
 		notice.setSize(notice.getPreferredSize());
 		
-		// ¹öÆ° ¼³Á¤
+		// ë²„íŠ¼ ì„¤ì •
 		JButton cancelBtn = new JButton("Cancel");
 		JButton confirmBtn = new JButton("Confirm");
 		
@@ -41,13 +41,13 @@ public class AdmChkUserDelete extends JPanel implements ActionListener{
 		cancelBtn.setBackground(new Color(189, 177, 157));
 		confirmBtn.setBackground(new Color(163, 152, 134));
 		cancelBtn.setForeground(Color.WHITE);
-		cancelBtn.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 18));
+		cancelBtn.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 18));
 		confirmBtn.setForeground(Color.WHITE);
-		confirmBtn.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 18));
+		confirmBtn.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 18));
 		cancelBtn.setBorder(BorderFactory.createLineBorder(new Color(189, 177, 157)));
 		confirmBtn.setBorder(BorderFactory.createLineBorder(new Color(163, 152, 134)));
 		
-		// ÆĞ³Î¿¡ ¿Ã¸®±â
+		// íŒ¨ë„ì— ì˜¬ë¦¬ê¸°
 		this.add(notice);
 		this.add(cancelBtn);
 		this.add(confirmBtn);

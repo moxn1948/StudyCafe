@@ -15,50 +15,50 @@ public class psswdfind extends JPanel{
 	
 	public psswdfind() {
 		
-		// ============= »ö»ó ===============
+		// ============= ìƒ‰ìƒ ===============
 		Color wallPapers = new Color(239,234,222);
 		Color textColor = new Color(127,118,104);
 		//===============================
 		
-		//============ font ¼³Á¤ ==========
+		//============ font ì„¤ì • ==========
 		Font siguptext = new Font("Noto Sans KR",Font.BOLD,30);
 		Font inputtext = new Font("Noto Sans KR",Font.BOLD,17);
 		Font checktext = new Font("Noto Sans KR",Font.BOLD,14);
 			
 		//===============================
 		
-		//============= ÆĞ³Î ¼³Á¤ ===============
+		//============= íŒ¨ë„ ì„¤ì • ===============
 		this.setSize(360,640);
 		this.setLayout(null);
 		this.setBackground(wallPapers);
 		//=================================
 		
-		//==== ½ºÅÍµğ Ä«Æä ¾ÆÀÌÄÜ ¼³Á¤ ===============
+		//==== ìŠ¤í„°ë”” ì¹´í˜ ì•„ì´ì½˜ ì„¤ì • ===============
 		Image imgicon = new ImageIcon("img/imgicon.png").getImage().getScaledInstance(30, 30, 0);
 		JLabel ib = new JLabel("",(new ImageIcon(imgicon)),SwingUtilities.CENTER);			ib.setBounds(150,0,50,50);
 		
 		//===============================
 	
-		//=======  È¸¿ø °¡ÀÔ  ¼³Á¤ ================
-		   JLabel text = new JLabel("ºñ¹Ğ¹øÈ£ Ã£±â");
+		//=======  íšŒì› ê°€ì…  ì„¤ì • ================
+		   JLabel text = new JLabel("ë¹„ë°€ë²ˆí˜¸ ì°¾ê¸°");
 		   text.setBounds(75,80,300,50);
 		   text.setLayout(null);
 		   text.setFont(siguptext);
 		   text.setForeground(textColor);
 			//===================================
 
-		   //=== ÀÔ·Â Ä­  =========
+		   //=== ì…ë ¥ ì¹¸  =========
 		   
-		   JLabel name = new JLabel("ÀÌ¸§"); //ÀÌ¸§ ¶óº§
+		   JLabel name = new JLabel("ì´ë¦„"); //ì´ë¦„ ë¼ë²¨
 		   name.setBounds(30, 230, 40, 30);
 		   name.setFont(inputtext);
 		   name.setForeground(textColor);
 		   
-		   JTextField nametf = new JTextField("³»¿ëÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+		   JTextField nametf = new JTextField("ë‚´ìš©ì„ ì…ë ¥í•˜ì„¸ìš”");
 		   nametf.setBounds(120,230,200,40);
 
-		   JLabel phnumber = new JLabel("ÈŞ´ëÆù");
-		   JLabel phnumber2 = new JLabel("¹øÈ£");
+		   JLabel phnumber = new JLabel("íœ´ëŒ€í°");
+		   JLabel phnumber2 = new JLabel("ë²ˆí˜¸");
 		   phnumber.setBounds(30,290,60,30);
 		   phnumber2.setBounds(30,310,60,30);
 		   phnumber.setFont(inputtext);
@@ -66,7 +66,7 @@ public class psswdfind extends JPanel{
 		   phnumber.setForeground(textColor);
 		   phnumber2.setForeground(textColor);
 		   
-		   JTextField phtf = new JTextField("³»¿ëÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+		   JTextField phtf = new JTextField("ë‚´ìš©ì„ ì…ë ¥í•˜ì„¸ìš”");
 		   phtf.setBounds(120,295,200,40);
 		   
 		   Image cancelimg2 = new ImageIcon("img/cancelbtnimg2.png").getImage().getScaledInstance(100, 40, 0);

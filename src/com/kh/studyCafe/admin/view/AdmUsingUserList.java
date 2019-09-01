@@ -29,21 +29,21 @@ public class AdmUsingUserList extends JPanel implements ActionListener {
 	
 	public AdmUsingUserList() {
 		
-		//Å×ÀÌºí Çì´õ ¸ñ·Ï
-		String[] columnNames = {"No", "È¸¿ø¸í", "ÀüÈ­¹øÈ£", "ÁÂ¼®¹øÈ£", "ÀÔ½Ç½Ã°£", "Åğ½Ç¿¹Á¤½Ã°£", "ÀÜ¿©½Ã°£", "°³ÀÎ/´ÜÃ¼", "ÁÂ¼®°ü¸®","ÁÂ¼®°ü¸®","ÁÂ¼®°ü¸®" };
+		//í…Œì´ë¸” í—¤ë” ëª©ë¡
+		String[] columnNames = {"No", "íšŒì›ëª…", "ì „í™”ë²ˆí˜¸", "ì¢Œì„ë²ˆí˜¸", "ì…ì‹¤ì‹œê°„", "í‡´ì‹¤ì˜ˆì •ì‹œê°„", "ì”ì—¬ì‹œê°„", "ê°œì¸/ë‹¨ì²´", "ì¢Œì„ê´€ë¦¬","ì¢Œì„ê´€ë¦¬","ì¢Œì„ê´€ë¦¬" };
 		
-		//Å×ÀÌºí ³»¿ë
+		//í…Œì´ë¸” ë‚´ìš©
 		Object[][] data = {
-				{1, "¼­¹ü¼ö", "010-9876-6543", "12¹ø", "02:30AM", "-", "25ÀÏ", "°³ÀÎ", "¿¬Àå","ÀÌµ¿","Åğ½Ç"},
-				{2, "Á¶¹®Á¤", "010-9876-6543", "12¹ø", "02:30AM", "-", "25ÀÏ", "°³ÀÎ", "¿¬Àå","ÀÌµ¿","Åğ½Ç"},
-				{3, "¼­¹ü¼ö", "010-9876-6543", "12¹ø", "02:30AM", "-", "25ÀÏ", "°³ÀÎ",  "¿¬Àå","ÀÌµ¿","Åğ½Ç"},
-				{4, "¼­¹ü¼ö", "010-9876-6543", "12¹ø", "02:30AM", "-", "25ÀÏ", "°³ÀÎ",  "¿¬Àå","ÀÌµ¿","Åğ½Ç"}
+				{1, "ì„œë²”ìˆ˜", "010-9876-6543", "12ë²ˆ", "02:30AM", "-", "25ì¼", "ê°œì¸", "ì—°ì¥","ì´ë™","í‡´ì‹¤"},
+				{2, "ì¡°ë¬¸ì •", "010-9876-6543", "12ë²ˆ", "02:30AM", "-", "25ì¼", "ê°œì¸", "ì—°ì¥","ì´ë™","í‡´ì‹¤"},
+				{3, "ì„œë²”ìˆ˜", "010-9876-6543", "12ë²ˆ", "02:30AM", "-", "25ì¼", "ê°œì¸",  "ì—°ì¥","ì´ë™","í‡´ì‹¤"},
+				{4, "ì„œë²”ìˆ˜", "010-9876-6543", "12ë²ˆ", "02:30AM", "-", "25ì¼", "ê°œì¸",  "ì—°ì¥","ì´ë™","í‡´ì‹¤"}
 		};
 		
-		//this.Àº panel ¼³Á¤
+		//this.ì€ panel ì„¤ì •
 		this.setBounds(0, 0, 978, 700);
 		
-		//Å×ÀÌºí ¸ğµ¨¸¸µé±â
+		//í…Œì´ë¸” ëª¨ë¸ë§Œë“¤ê¸°
 		DefaultTableModel model = new DefaultTableModel(data,columnNames) {
 			public boolean isCellEditable(int row, int column){
 				if(column >= 8) {
@@ -54,20 +54,20 @@ public class AdmUsingUserList extends JPanel implements ActionListener {
 		};
 		this.setLayout(null);
 		this.setBackground(Color.WHITE);
-		//Å×ÀÌºí »ı¼º
+		//í…Œì´ë¸” ìƒì„±
 		JTable table = new JTable(model);
 		
-		//ÀÌ¹ÌÁö ÆÄÀÏ ºÒ·¯¿À±â
+		//ì´ë¯¸ì§€ íŒŒì¼ ë¶ˆëŸ¬ì˜¤ê¸°
 		Image icon = new ImageIcon("images/logo.PNG").getImage().getScaledInstance(41, 54, 0);
 		JLabel logoLabel = new JLabel(new ImageIcon(icon));
 		logoLabel.setLocation(470, 35);
 		logoLabel.setSize(41, 54);
 		JTableHeader header = table.getTableHeader();
 
-		//Å×ÀÌºí Çì´õ Å©±â¼³Á¤		
+		//í…Œì´ë¸” í—¤ë” í¬ê¸°ì„¤ì •		
 		header.setPreferredSize(new Dimension(10, 50));
 		
-		//Å×ÀÌºí Çà ³ôÀÌ ¼³Á¤
+		//í…Œì´ë¸” í–‰ ë†’ì´ ì„¤ì •
 		table.setRowHeight(40);
 		
 		table.getColumnModel().getColumn(0).setPreferredWidth(36);
@@ -82,12 +82,12 @@ public class AdmUsingUserList extends JPanel implements ActionListener {
 		table.getColumnModel().getColumn(9).setPreferredWidth(68);
 		table.getColumnModel().getColumn(10).setPreferredWidth(68);
 		
-		//Å×ÀÌºí ½ºÅ©·Ñ ±â´É Ãß°¡ÇØ¼­ ³Ö±â
+		//í…Œì´ë¸” ìŠ¤í¬ë¡¤ ê¸°ëŠ¥ ì¶”ê°€í•´ì„œ ë„£ê¸°
 		JScrollPane scrollpane = new JScrollPane(table);
 		
-		//ÀüÃ¼ Å×ÀÌºí Å©±â¼³Á¤
+		//ì „ì²´ í…Œì´ë¸” í¬ê¸°ì„¤ì •
 		scrollpane.setPreferredSize(new Dimension(920, 504));
-		//Å×ÀÌºí ¸ğ¾ç ¼³Á¤
+		//í…Œì´ë¸” ëª¨ì–‘ ì„¤ì •
 		scrollpane.setBounds(21, 118, 920, 504);
 		scrollpane.getViewport().setBackground(Color.WHITE); 
 		scrollpane.setBackground(Color.WHITE);
@@ -95,70 +95,70 @@ public class AdmUsingUserList extends JPanel implements ActionListener {
 		table.setBorder(BorderFactory.createCompoundBorder(BorderFactory.createCompoundBorder(), BorderFactory.createMatteBorder(0,1,1,1,new Color(127,118,104))));
 		table.setGridColor(new Color(127,118,104));
 		table.setForeground(new Color(127, 118, 104)); 		
-		table.setFont(new Font("¸¼Àº °íµñ", Font.PLAIN, 14));
-		//Å×ÀÌºí Çì´õ ¼³Á¤
+		table.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.PLAIN, 14));
+		//í…Œì´ë¸” í—¤ë” ì„¤ì •
 		header.setBorder(BorderFactory.createLineBorder(new Color(127,118,104)));
 		header.setForeground(new Color(127, 118, 104)); 		
-		header.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 14));
+		header.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 14));
 		header.setBackground(Color.WHITE);
 		
 		
-		// DefaultTableCellHeaderRenderer »ı¼º (°¡¿îµ¥ Á¤·ÄÀ» À§ÇÑ)
+		// DefaultTableCellHeaderRenderer ìƒì„± (ê°€ìš´ë° ì •ë ¬ì„ ìœ„í•œ)
 		DefaultTableCellRenderer tScheduleCellRenderer = new DefaultTableCellRenderer();
-		// DefaultTableCellHeaderRendererÀÇ Á¤·ÄÀ» °¡¿îµ¥ Á¤·Ä·Î ÁöÁ¤
+		// DefaultTableCellHeaderRendererì˜ ì •ë ¬ì„ ê°€ìš´ë° ì •ë ¬ë¡œ ì§€ì •
 		tScheduleCellRenderer.setHorizontalAlignment(SwingConstants.CENTER);
-		// Á¤·ÄÇÒ Å×ÀÌºíÀÇ ColumnModelÀ» °¡Á®¿È
+		// ì •ë ¬í•  í…Œì´ë¸”ì˜ ColumnModelì„ ê°€ì ¸ì˜´
 		TableColumnModel tcmSchedule = table.getColumnModel();
-		// ¹İº¹¹®À» ÀÌ¿ëÇÏ¿© Å×ÀÌºíÀ» °¡¿îµ¥ Á¤·Ä·Î ÁöÁ¤
+		// ë°˜ë³µë¬¸ì„ ì´ìš©í•˜ì—¬ í…Œì´ë¸”ì„ ê°€ìš´ë° ì •ë ¬ë¡œ ì§€ì •
 		for (int i = 0; i < tcmSchedule.getColumnCount(); i++) {
 		tcmSchedule.getColumn(i).setCellRenderer(tScheduleCellRenderer);
 		}
 		
-		//¸ÅÀåÁ¤º¸º¸±â ¹öÆ° »ı¼º
-		JButton cafeInfo = new JButton("¸ÅÀå Á¤º¸ º¸±â");
+		//ë§¤ì¥ì •ë³´ë³´ê¸° ë²„íŠ¼ ìƒì„±
+		JButton cafeInfo = new JButton("ë§¤ì¥ ì •ë³´ ë³´ê¸°");
 		cafeInfo.setBounds(801, 603, 140, 42);
 		cafeInfo.setBackground(new Color(189,177,157));
 		cafeInfo.setForeground(Color.WHITE);
-		cafeInfo.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 15));
+		cafeInfo.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 15));
 		cafeInfo.setBorder(BorderFactory.createLineBorder(new Color(189,177,157)));
 		
-		//ÀüÃ¼ È¸¿øº¸±â ¹öÆ°»ı¼º
-		JButton allUserInfoButton = new JButton("ÀüÃ¼ È¸¿ø º¸±â");
+		//ì „ì²´ íšŒì›ë³´ê¸° ë²„íŠ¼ìƒì„±
+		JButton allUserInfoButton = new JButton("ì „ì²´ íšŒì› ë³´ê¸°");
 		allUserInfoButton.setBounds(801, 70, 140, 42);
 		allUserInfoButton.setBackground(Color.WHITE);
 		allUserInfoButton.setForeground(new Color(189,177,157));
-		allUserInfoButton.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 15));
+		allUserInfoButton.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 15));
 		allUserInfoButton.setBorder(BorderFactory.createLineBorder(new Color(189,177,157)));
 		
-		//»ç¿ëÁßÀÎ ´ÜÃ¼¼®º¸´Â ¶óº§»ı¼º
-		JLabel usingSeatGrp = new JLabel("´ÜÃ¼¼®    / 5");
+		//ì‚¬ìš©ì¤‘ì¸ ë‹¨ì²´ì„ë³´ëŠ” ë¼ë²¨ìƒì„±
+		JLabel usingSeatGrp = new JLabel("ë‹¨ì²´ì„    / 5");
 		usingSeatGrp.setLocation(23, 83);
 		usingSeatGrp.setForeground(new Color(127, 118, 104));
-		usingSeatGrp.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 12));
+		usingSeatGrp.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 12));
 		usingSeatGrp.setSize(usingSeatGrp.getPreferredSize());
 		
-		//»ç¿ëÁßÀÎ °³ÀÎ¼®º¸´Â ¶óº§ »ı¼º
-		JLabel usingSeat = new JLabel("°³ÀÎ¼®    / 25");
+		//ì‚¬ìš©ì¤‘ì¸ ê°œì¸ì„ë³´ëŠ” ë¼ë²¨ ìƒì„±
+		JLabel usingSeat = new JLabel("ê°œì¸ì„    / 25");
 		usingSeat.setLocation(23, 98);
 		usingSeat.setForeground(new Color(127, 118, 104));
-		usingSeat.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 12));
+		usingSeat.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 12));
 		usingSeat.setSize(usingSeat.getPreferredSize());
 		
-		//»ç¿ëÁßÀÎ ´ÜÃ¼¼® Ç¥½ÃÇÒ ¶óº§(¼öÁ¤ÇØ¾ßÇÔ)
+		//ì‚¬ìš©ì¤‘ì¸ ë‹¨ì²´ì„ í‘œì‹œí•  ë¼ë²¨(ìˆ˜ì •í•´ì•¼í•¨)
 		JLabel usingInfoGrp = new JLabel("1");
 		usingInfoGrp.setLocation(63, 83);
 		usingInfoGrp.setForeground(new Color(127, 118, 104));
-		usingInfoGrp.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 12));
+		usingInfoGrp.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 12));
 		usingInfoGrp.setSize(usingInfoGrp.getPreferredSize());
 		
-		//»ç¿ëÁßÀÎ °³ÀÎ¼® Ç¥½ÃÇÒ ¶óº§(¼öÁ¤ÇØ¾ßÇÔ)
+		//ì‚¬ìš©ì¤‘ì¸ ê°œì¸ì„ í‘œì‹œí•  ë¼ë²¨(ìˆ˜ì •í•´ì•¼í•¨)
 		JLabel usingInfo = new JLabel("3");
 		usingInfo.setLocation(63, 98);
 		usingInfo.setForeground(new Color(127, 118, 104));
-		usingInfo.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 12));
+		usingInfo.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 12));
 		usingInfo.setSize(usingInfo.getPreferredSize());
 		
-		//Å×ÀÌºí ³»¿ë ¼öÁ¤¸øÇÏµµ·Ï ¹Ù²Ş
+		//í…Œì´ë¸” ë‚´ìš© ìˆ˜ì •ëª»í•˜ë„ë¡ ë°”ê¿ˆ
 		//table.setEnabled(false);
 		table.getTableHeader().setReorderingAllowed(false);
 		table.getTableHeader().setResizingAllowed(false);
@@ -174,7 +174,7 @@ public class AdmUsingUserList extends JPanel implements ActionListener {
 		
         
 		
-		//ÆĞ³Î¿¡ Ãß°¡ÇÏ±â
+		//íŒ¨ë„ì— ì¶”ê°€í•˜ê¸°
 		this.add(logoLabel);
 		this.add(usingInfo);
 		this.add(usingInfoGrp);
@@ -194,17 +194,17 @@ public class AdmUsingUserList extends JPanel implements ActionListener {
 	}
 	
 }
-//¿¬Àå ¹öÆ°À» ¸¸µé¶§ ÇÊ¿äÇÑ Å¬·¡½º
+//ì—°ì¥ ë²„íŠ¼ì„ ë§Œë“¤ë•Œ í•„ìš”í•œ í´ë˜ìŠ¤
 class AddTime extends AbstractCellEditor implements TableCellEditor, TableCellRenderer {
     JButton jb;
 
     public AddTime() {
-        jb = new JButton("¿¬Àå");
+        jb = new JButton("ì—°ì¥");
         jb.setForeground(Color.WHITE);
-		jb.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 15));
+		jb.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 15));
         jb.setBackground(new Color(127, 118, 104));
         
-        //Å¬¸¯½Ã ÆË¾÷ 
+        //í´ë¦­ì‹œ íŒì—… 
         jb.addActionListener(e -> {
         	jb.setBackground(Color.WHITE);
         	jb.setForeground(new Color(127, 118, 104));
@@ -228,14 +228,14 @@ class AddTime extends AbstractCellEditor implements TableCellEditor, TableCellRe
         return jb;
     }
 }
-//ÀÚ¸®ÀÌµ¿À» ÇÒ¶§ ÇÊ¿äÇÑ ¹öÆ°À» ¸¸µå´Â Å¬·¡½º
+//ìë¦¬ì´ë™ì„ í• ë•Œ í•„ìš”í•œ ë²„íŠ¼ì„ ë§Œë“œëŠ” í´ë˜ìŠ¤
 class SeatMove extends AbstractCellEditor implements TableCellEditor, TableCellRenderer {
     JButton jb;
 
     public SeatMove() {
-        jb = new JButton("ÀÌµ¿");
+        jb = new JButton("ì´ë™");
         jb.setForeground(Color.WHITE);
-		jb.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 15));
+		jb.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 15));
         jb.setBackground(new Color(127, 118, 104));
         
         jb.addActionListener(e -> {
@@ -262,14 +262,14 @@ class SeatMove extends AbstractCellEditor implements TableCellEditor, TableCellR
     }
 } 
 
-//Åğ½ÇÀ» ÇÒ¶§ ÇÊ¿äÇÑ ¹öÆ°À» ¸¸µå´Â Å¬·¡½º
+//í‡´ì‹¤ì„ í• ë•Œ í•„ìš”í•œ ë²„íŠ¼ì„ ë§Œë“œëŠ” í´ë˜ìŠ¤
 class ExitSeat extends AbstractCellEditor implements TableCellEditor, TableCellRenderer {
     JButton jb;
 
     public ExitSeat() {
-        jb = new JButton("ÅğÀå");
+        jb = new JButton("í‡´ì¥");
         jb.setForeground(Color.WHITE);
-		jb.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 15));
+		jb.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 15));
         jb.setBackground(new Color(127, 118, 104));
         
         jb.addActionListener(e -> {

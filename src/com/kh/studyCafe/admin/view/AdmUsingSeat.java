@@ -10,33 +10,33 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-//ÀÌ¹Ì ¼±ÅÃÇÑ ÁÂ¼®
+//ì´ë¯¸ ì„ íƒí•œ ì¢Œì„
 public class AdmUsingSeat extends JPanel implements ActionListener {
 
 	     
 	public AdmUsingSeat() {
-		//ÆĞ³Î ¼³Á¤
+		//íŒ¨ë„ ì„¤ì •
 		      
 		this.setBounds(270,203,410,193);
 		this.setBackground(new Color(239,234,222));
 		this.setBorder(BorderFactory.createLineBorder(new Color(189,177,157)));
 		
-		JLabel title = new JLabel("ÀÌ¹Ì ¼±ÅÃµÈ ÁÂ¼®ÀÔ´Ï´Ù.");
+		JLabel title = new JLabel("ì´ë¯¸ ì„ íƒëœ ì¢Œì„ì…ë‹ˆë‹¤.");
 		
 		title.setLocation(80,43);
 		title.setForeground(new Color(127,118,104));
-		title.setFont(new Font("¸¼Àº °íµñ",Font.BOLD,24));
+		title.setFont(new Font("ë§‘ì€ ê³ ë”•",Font.BOLD,24));
 		title.setSize(title.getPreferredSize());
 		  
 		JButton closeBtn = new JButton("Close");
 		
 		closeBtn.setBounds(45,120,326,50);
 		closeBtn.setBackground(new Color(8,177,157));
-		closeBtn.setFont(new Font("¸¼Àº °íµñ",Font.BOLD,18));
+		closeBtn.setFont(new Font("ë§‘ì€ ê³ ë”•",Font.BOLD,18));
 		closeBtn.setForeground(Color.WHITE);
 	
 		
-		//ÆĞ³Î¿¡ ¿Ã¸®±â
+		//íŒ¨ë„ì— ì˜¬ë¦¬ê¸°
 		this.add(title);
 		this.add(closeBtn);
 	}

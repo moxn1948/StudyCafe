@@ -22,7 +22,7 @@ public class AdmSeatTable extends JPanel implements ActionListener, MouseListene
 	private boolean seatToggle;
 			
 	public AdmSeatTable() {
-		// ÆĞ³Î ¼³Á¤
+		// íŒ¨ë„ ì„¤ì •
 		int w = 404;
 		int h = 548;
 		int x = popPosition(w, h)[0];
@@ -33,19 +33,19 @@ public class AdmSeatTable extends JPanel implements ActionListener, MouseListene
 		this.setBackground(new Color(239, 234, 222));
 		this.setBorder(BorderFactory.createLineBorder(new Color(189, 177, 157)));
 
-		// title ÅØ½ºÆ® ¼³Á¤
-		JLabel title = new JLabel("ÁÂ¼®Ç¥");
+		// title í…ìŠ¤íŠ¸ ì„¤ì •
+		JLabel title = new JLabel("ì¢Œì„í‘œ");
 
 		title.setLocation(156, 40);
 		title.setForeground(new Color(127, 118, 104));
-		title.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 32));
+		title.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 32));
 		title.setSize(title.getPreferredSize());
 		
-		// ÁÂ¼®Ç¥ ¼³Á¤
+		// ì¢Œì„í‘œ ì„¤ì •
 		JLayeredPane seat = new JLayeredPane();
 		seat.setBounds(26, 104, 354, 350);
 
-		// ÁÂ¼®Ç¥ ¹èÄ¡
+		// ì¢Œì„í‘œ ë°°ì¹˜
 		
 		for (int i = 0; i < seatIndv.length; i++) {
 			String seatNo = i + 1 + "";
@@ -53,7 +53,7 @@ public class AdmSeatTable extends JPanel implements ActionListener, MouseListene
 			seatIndv[i].setSize(40, 40);
 			seatIndv[i].setBackground(Color.WHITE);
 			seatIndv[i].setForeground(new Color(127, 118, 104));
-			seatIndv[i].setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 13));
+			seatIndv[i].setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 13));
 			seatIndv[i].setBorder(BorderFactory.createEmptyBorder());
 			seat.add(seatIndv[i]);
 			
@@ -61,7 +61,7 @@ public class AdmSeatTable extends JPanel implements ActionListener, MouseListene
 				seatGrp[i] = new JButton(seatNo);
 				seatGrp[i].setBackground(Color.WHITE);
 				seatGrp[i].setForeground(new Color(127, 118, 104));
-				seatGrp[i].setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 13));
+				seatGrp[i].setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 13));
 				seatGrp[i].setBorder(BorderFactory.createEmptyBorder());
 				seat.add(seatGrp[i]);
 			}
@@ -121,7 +121,7 @@ public class AdmSeatTable extends JPanel implements ActionListener, MouseListene
 		}
 		
 		
-		// ¹öÆ° ¼³Á¤
+		// ë²„íŠ¼ ì„¤ì •
 		JButton cancelBtn = new JButton("Cancel");
 		JButton confirmBtn = new JButton("Confirm");
 		
@@ -130,13 +130,13 @@ public class AdmSeatTable extends JPanel implements ActionListener, MouseListene
 		cancelBtn.setBackground(new Color(189, 177, 157));
 		confirmBtn.setBackground(new Color(163, 152, 134));
 		cancelBtn.setForeground(Color.WHITE);
-		cancelBtn.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 18));
+		cancelBtn.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 18));
 		confirmBtn.setForeground(Color.WHITE);
-		confirmBtn.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 18));
+		confirmBtn.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 18));
 		cancelBtn.setBorder(BorderFactory.createLineBorder(new Color(189, 177, 157)));
 		confirmBtn.setBorder(BorderFactory.createLineBorder(new Color(163, 152, 134)));
 		
-		// ÆĞ³Î¿¡ ¿Ã¸²
+		// íŒ¨ë„ì— ì˜¬ë¦¼
 		this.add(title);
 		this.add(seat);
 		this.add(cancelBtn);

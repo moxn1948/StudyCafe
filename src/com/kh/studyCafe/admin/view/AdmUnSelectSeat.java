@@ -11,7 +11,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class AdmUnSelectSeat extends JPanel implements ActionListener{
-//ÁÂ¼®À» ¼±ÅÃÇØÁÖ¼¼¿ä ÆË¾÷1¹ø
+//ì¢Œì„ì„ ì„ íƒí•´ì£¼ì„¸ìš” íŒì—…1ë²ˆ
 	      
 	public AdmUnSelectSeat() {
 		
@@ -21,26 +21,26 @@ public class AdmUnSelectSeat extends JPanel implements ActionListener{
 		
 		
 		
-		//title ÅØ½ºÆ® ¼³Á¤
+		//title í…ìŠ¤íŠ¸ ì„¤ì •
 		
-		JLabel title = new JLabel("ÀÌµ¿ÇÏ½Ç ÁÂ¼®À» ¼±ÅÃÇØ ÁÖ¼¼¿ä.");
+		JLabel title = new JLabel("ì´ë™í•˜ì‹¤ ì¢Œì„ì„ ì„ íƒí•´ ì£¼ì„¸ìš”.");
 		
 		title.setLocation(35, 43);
 		title.setForeground(new Color(127,118,104));
-		title.setFont(new Font("¸¼Àº °íµñ",Font.BOLD,24));
+		title.setFont(new Font("ë§‘ì€ ê³ ë”•",Font.BOLD,24));
 		title.setSize(title.getPreferredSize());
 		
 		
-		//¹öÆ°¼³Á¤
+		//ë²„íŠ¼ì„¤ì •
 		JButton closeBtn = new JButton("Close");
 		
 		closeBtn.setBounds(45,120,326,50);
 		closeBtn.setBackground(new Color(18,177,157));
-		closeBtn.setFont(new Font("¸¼Àº °íµñ",Font.BOLD,18));
+		closeBtn.setFont(new Font("ë§‘ì€ ê³ ë”•",Font.BOLD,18));
 		closeBtn.setForeground(Color.WHITE);
 		
 		
-		//ÆĞ³Î¿¡ ¿Ã¸®±â
+		//íŒ¨ë„ì— ì˜¬ë¦¬ê¸°
 		this.add(title);
 		this.add(closeBtn);
 	}
