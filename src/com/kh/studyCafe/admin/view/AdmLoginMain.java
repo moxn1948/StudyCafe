@@ -32,7 +32,10 @@ public class AdmLoginMain extends MouseAdapter implements ActionListener{ // Mou
 	@Override
 	public void mouseClicked(MouseEvent e) {
 		ControlPanel cp = new ControlPanel();
-		cp.changePanel(mf, login, new AdmChkUserDelete());
+		//사용중인 유저 리스트 화면입니다.
+		//cp.changeTablePanel(mf, login, new AdmUsingUserList());
+		//전체 회원보기 했을때 나오는 전체회원 화면입니다.
+		//cp.changeTablePanel(mf, login, new AdmAllUserList());
 	}
 
 }
