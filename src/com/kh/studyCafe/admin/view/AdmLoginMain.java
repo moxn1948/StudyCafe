@@ -16,7 +16,7 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 //import org.jdesktop.swingx.prompt.PromptSupport;
 
-public class AdmLoginMain extends MouseAdapter implements ActionListener{ // MouseAdapter´Â ¿¹½ÃÀÌ°í, ÇÊ¿äÇÑ ÀÌº¥Æ®¿¡´Ù ControlPanel ¼±¾ğÇØÁÖ¸é µË´Ï´Ù.
+public class AdmLoginMain extends MouseAdapter implements ActionListener{ // MouseAdapterëŠ” ì˜ˆì‹œì´ê³ , í•„ìš”í•œ ì´ë²¤íŠ¸ì—ë‹¤ ControlPanel ì„ ì–¸í•´ì£¼ë©´ ë©ë‹ˆë‹¤.
 	private JPanel login = new JPanel();
 	private AdmMainFrame mf;
 	private JTextField loginTextField;
@@ -36,23 +36,23 @@ public class AdmLoginMain extends MouseAdapter implements ActionListener{ // Mou
         layeredPane.setBounds(0, 0, 978, 700);
         layeredPane.setLayout(null);
         
-		// ¸ŞÀÎ ·Î°í ÅØ½ºÆ® ¿µ¿ª
-		JLabel logoTxt = new JLabel("<html><body><p>½ºÅÍµğÄ«Æä ´Ù´Ï°í<br>³ªÀÇ ¼º°ø½Ã´ë<br>½ÃÀÛµÆ´Ù</p></body></html>");
+		// ë©”ì¸ ë¡œê³  í…ìŠ¤íŠ¸ ì˜ì—­
+		JLabel logoTxt = new JLabel("<html><body><p>ìŠ¤í„°ë””ì¹´í˜ ë‹¤ë‹ˆê³ <br>ë‚˜ì˜ ì„±ê³µì‹œëŒ€<br>ì‹œì‘ëë‹¤</p></body></html>");
 		
 		logoTxt.setLocation(250, 130);
 		logoTxt.setForeground(new Color(127, 118, 104));
-		logoTxt.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 53));
+		logoTxt.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 53));
 		logoTxt.setSize(logoTxt.getPreferredSize());
 		
-		// ¹öÀü ¾È³» ÅØ½ºÆ® ¿µ¿ª
-		JLabel versionTxt = new JLabel("°ü¸®ÀÚ¿ë version");
+		// ë²„ì „ ì•ˆë‚´ í…ìŠ¤íŠ¸ ì˜ì—­
+		JLabel versionTxt = new JLabel("ê´€ë¦¬ììš© version");
 
 		versionTxt.setLocation(457, 358);
 		versionTxt.setForeground(new Color(127, 118, 104));
-		versionTxt.setFont(new Font("¸¼Àº °íµñ", Font.PLAIN, 12));
+		versionTxt.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.PLAIN, 12));
 		versionTxt.setSize(versionTxt.getPreferredSize());
 		
-		// ID ¿µ¿ª
+		// ID ì˜ì—­
 		loginTextField = new JTextField(" ID");
 		loginTextField.setBounds(340, 380, 207, 40);
 		loginTextField.setBackground(Color.WHITE);
@@ -61,7 +61,7 @@ public class AdmLoginMain extends MouseAdapter implements ActionListener{ // Mou
 		loginTextField.addMouseListener(this); 
 		
 		
-		// PassWord ¿µ¿ª
+		// PassWord ì˜ì—­
 		passwordField = new JPasswordField(" PASSWORD");
 		passwordField.setBounds(340, 425, 207, 40);
 		passwordField.setBackground(Color.WHITE);
@@ -70,12 +70,12 @@ public class AdmLoginMain extends MouseAdapter implements ActionListener{ // Mou
 		passwordField.addMouseListener(this); 
 		
 		
-		// Login button ¿µ¿ª
+		// Login button ì˜ì—­
 		loginBtn = new JButton("Login");
 		loginBtn.setBounds(340, 475, 207, 40);
 		loginBtn.setBackground(new Color(189, 177, 157));
 		loginBtn.setForeground(Color.WHITE);
-		loginBtn.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 18));
+		loginBtn.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 18));
 		loginBtn.setBorder(BorderFactory.createLineBorder(new Color(189, 177, 157)));
 		loginBtn.addActionListener(this); 
 		login.add(logoTxt);
@@ -121,12 +121,16 @@ public class AdmLoginMain extends MouseAdapter implements ActionListener{ // Mou
 		
 		
 		ControlPanel cp = new ControlPanel();
-//		cp.changePanel(mf, login, new AdmExitTimeHour()); // 3¹øÂ° ÀÎÀÚ´Â Å×½ºÆ® ¿ëÀÔ´Ï´Ù.
-//		cp.changePanel(mf, login, new AdmExitTimeWeek()); // 3¹øÂ° ÀÎÀÚ´Â Å×½ºÆ® ¿ëÀÔ´Ï´Ù.
-//		cp.changePanel(mf, login, new AdmChkUserDelete()); // 3¹øÂ° ÀÎÀÚ´Â Å×½ºÆ® ¿ëÀÔ´Ï´Ù.
-//		cp.changePanel(mf, login, new AdmSeatTable()); // 3¹øÂ° ÀÎÀÚ´Â Å×½ºÆ® ¿ëÀÔ´Ï´Ù.
-//		cp.changePanel(mf, login, new AdmNewIndvSelectTime()); // 3¹øÂ° ÀÎÀÚ´Â Å×½ºÆ® ¿ëÀÔ´Ï´Ù.
-		cp.changePanel(mf, login, new AdmNewGrpSelectTime()); // 3¹øÂ° ÀÎÀÚ´Â Å×½ºÆ® ¿ëÀÔ´Ï´Ù.
+    //		cp.changePanel(mf, login, new AdmExitTimeHour()); // 3ë²ˆì§¸ ì¸ìëŠ” í…ŒìŠ¤íŠ¸ ìš©ì…ë‹ˆë‹¤.
+    //		cp.changePanel(mf, login, new AdmExitTimeWeek()); // 3ë²ˆì§¸ ì¸ìëŠ” í…ŒìŠ¤íŠ¸ ìš©ì…ë‹ˆë‹¤.
+    //		cp.changePanel(mf, login, new AdmChkUserDelete()); // 3ë²ˆì§¸ ì¸ìëŠ” í…ŒìŠ¤íŠ¸ ìš©ì…ë‹ˆë‹¤.
+    //		cp.changePanel(mf, login, new AdmSeatTable()); // 3ë²ˆì§¸ ì¸ìëŠ” í…ŒìŠ¤íŠ¸ ìš©ì…ë‹ˆë‹¤.
+    //		cp.changePanel(mf, login, new AdmNewIndvSelectTime()); // 3ë²ˆì§¸ ì¸ìëŠ” í…ŒìŠ¤íŠ¸ ìš©ì…ë‹ˆë‹¤.
+    //		cp.changePanel(mf, login, new AdmNewGrpSelectTime()); // 3ë²ˆì§¸ ì¸ìëŠ” í…ŒìŠ¤íŠ¸ ìš©ì…ë‹ˆë‹¤.
+		//ì‚¬ìš©ì¤‘ì¸ ìœ ì € ë¦¬ìŠ¤íŠ¸ í™”ë©´ì…ë‹ˆë‹¤.
+		//cp.changeTablePanel(mf, login, new AdmUsingUserList());
+		//ì „ì²´ íšŒì›ë³´ê¸° í–ˆì„ë•Œ ë‚˜ì˜¤ëŠ” ì „ì²´íšŒì› í™”ë©´ì…ë‹ˆë‹¤.
+		//cp.changeTablePanel(mf, login, new AdmAllUserList());
 	}
 
 }
