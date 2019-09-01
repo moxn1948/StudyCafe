@@ -24,7 +24,7 @@ public class AdmMoveGrp extends JPanel implements ActionListener{
 		//title 텍스트 설정
 		JLabel title = new JLabel("스터디룸은 이동이 불가능합니다.");
 	 
-		
+		    
 		title.setLocation(29, 43);
 		title.setForeground(new Color(127,118,104));
 		title.setFont(new Font("맑은 고딕",Font.BOLD,24));

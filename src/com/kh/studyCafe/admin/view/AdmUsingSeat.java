@@ -13,10 +13,10 @@ import javax.swing.JPanel;
 //이미 선택한 좌석
 public class AdmUsingSeat extends JPanel implements ActionListener {
 
-	  
+	     
 	public AdmUsingSeat() {
 		//패널 설정
-		
+		      
 		this.setBounds(270,203,410,193);
 		this.setBackground(new Color(239,234,222));
 		this.setBorder(BorderFactory.createLineBorder(new Color(189,177,157)));
