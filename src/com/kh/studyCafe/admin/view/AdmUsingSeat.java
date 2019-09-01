@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 //이미 선택한 좌석
 public class AdmUsingSeat extends JPanel implements ActionListener {
 
-	
+	  
 	public AdmUsingSeat() {
 		//패널 설정
 		
