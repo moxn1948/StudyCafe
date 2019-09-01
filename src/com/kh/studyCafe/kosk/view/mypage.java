@@ -16,25 +16,25 @@ public class mypage extends JPanel{
 	public mypage() {
 		this.setSize(360,640);
 		
-		//===== 색상 설정 =====
+		//===== ���� ���� =====
 		Color wallPapers = new Color(239,234,222);
 		Color textColor = new Color(127,118,104);
 				
 		//===============
 				
-		//===== JPanel 설정 =======
+		//===== JPanel ���� =======
 		this.setLayout(null);
 		this.setBackground(wallPapers);
 		//=======================
 				
-		//============ font 설정 ==========
+		//============ font ���� ==========
 		Font siguptext = new Font("Noto Sans KR",Font.BOLD,30);
 		Font inputtext = new Font("Noto Sans KR",Font.BOLD,17);
 		Font checktext = new Font("Noto Sans KR",Font.BOLD,14);
 	
 		//===============================
 		
-		//==== 스터디 카페 아이콘 설정 ===============
+		//==== ���͵� ī�� ������ ���� ===============
 		Image imgicon = new ImageIcon("img/imgicon.png").getImage().getScaledInstance(60, 80, 0);
 		JLabel ib = new JLabel("  마이 페이지",(new ImageIcon(imgicon)),SwingUtilities.CENTER);
 		ib.setBounds(10,0,250,80);
@@ -42,9 +42,9 @@ public class mypage extends JPanel{
 		ib.setFont(siguptext);
 		//===============================
 		
-		//==== 입력란 =================
+		//==== �Է¶� ====================
 		
-		 JLabel name = new JLabel("이름"); //이름 라벨
+		 JLabel name = new JLabel("이름"); //�̸� ��
 		   name.setBounds(30, 100, 40, 30);
 		   name.setFont(inputtext);
 		   name.setForeground(textColor);
@@ -58,10 +58,14 @@ public class mypage extends JPanel{
 		   phnumber.setForeground(textColor);
 		   phnumber2.setForeground(textColor);
 		   
-		   JLabel hou1 = new JLabel("이용가능시간");
+		   JLabel hou1 = new JLabel("이용가능");
+		   JLabel hou2 = new JLabel("시간");
 		   hou1.setBounds(30,220,80,30);
+		   hou2.setBounds(30,240,80,30);
 		   hou1.setForeground(textColor);
 		   hou1.setFont(inputtext);
+		   hou2.setForeground(textColor);
+		   hou2.setFont(inputtext);
 		   
 		   JLabel atime1 = new JLabel("입실시간");
 		   atime1.setBounds(30,280,80,30);
@@ -73,7 +77,7 @@ public class mypage extends JPanel{
 		   dtime1.setForeground(textColor);
 		   dtime1.setFont(inputtext);
 		   
-		   JLabel point1 = new JLabel("포인터");
+		   JLabel point1 = new JLabel("포인트");
 		   point1.setBounds(30,400,80,30);
 		   point1.setForeground(textColor);
 		   point1.setFont(inputtext);
@@ -85,29 +89,50 @@ public class mypage extends JPanel{
 		   
 		 
 		   
-		   JTextField nametf = new JTextField("내용을 입력하세요");
+		   JTextField nametf = new JTextField("김진호 님");
+		   nametf.setBackground(wallPapers);
+		   nametf.setFont(inputtext);
 		   nametf.setBounds(120,100,200,40);
+		   nametf.setForeground(textColor);
 		   
-		   JTextField phtf = new JTextField("내용을 입력하세요");
+		   JTextField phtf = new JTextField("010-7777-7777");
 		   phtf.setBounds(120,160,200,40);
+		   phtf.setBackground(wallPapers);
+		   phtf.setFont(inputtext);
+		   phtf.setForeground(textColor);
 		   
-		   JTextField hou = new JTextField("내용을 입력하세요");
+		   JTextField hou = new JTextField("4주 12시 26분");
 		   hou.setBounds(120,220,200,40);
+		   hou.setBackground(wallPapers);
+		   hou.setFont(inputtext);
+		   hou.setForeground(textColor);
 		   
-		   JTextField atime = new JTextField("내용을 입력하세요");
+		   JTextField atime = new JTextField("AM 08:00");
 		   atime.setBounds(120,280,200,40);
+		   atime.setBackground(wallPapers);
+		   atime.setFont(inputtext);
+		   atime.setForeground(textColor);
 		   
-		   JTextField dtime = new JTextField("내용을 입력하세요");
+		   JTextField dtime = new JTextField("PM 11:59");
 		   dtime.setBounds(120,340,200,40);
+		   dtime.setBackground(wallPapers);
+		   dtime.setFont(inputtext);
+		   dtime.setForeground(textColor);
 		   
-		   JTextField point = new JTextField("내용을 입력하세요");
+		   JTextField point = new JTextField("9999999p");
 		   point.setBounds(120,400,200,40);
+		   point.setBackground(wallPapers);
+		   point.setFont(inputtext);
+		   point.setForeground(textColor);
 		   
-		   JTextField rating = new JTextField("내용을 입력하세요");
+		   JTextField rating = new JTextField("골드");
 		   rating.setBounds(120,460,200,40);
+		   rating.setBackground(wallPapers);
+		   rating.setFont(inputtext);
+		   rating1.setForeground(textColor);
 		 //======================================
 		   
-		 //=== 버튼 ===========================
+		 //=== ��ư ===========================
 
 		   Image findimg = new ImageIcon("img/okbtnimg.png").getImage().getScaledInstance(100, 40, 0);
 		   

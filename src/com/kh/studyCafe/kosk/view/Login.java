@@ -22,7 +22,7 @@ public class Login extends JPanel{
 		this.mf = mf;
 		mainpage = this;
 		
-		//======= 색 설정 ====
+		//======= �� ���� ====
 		
 		Color wallPapers = new Color(239,234,222);
 		Color textColor = new Color(127,118,104);
@@ -30,40 +30,40 @@ public class Login extends JPanel{
 		//=================
 		
 		
-		//================ Frame 설정 ======================
+		//================ Frame ���� ======================
 		this.setSize(360,640);
 		this.setLayout(null);
 		this.setBackground(wallPapers);
 		//================================================
 		
-		//============== font 설정 =========
+		//============== font ���� =========
 		
 		Font f1 = new Font("Noto Sans KR",Font.BOLD,25);
 		
 		//============================
 		
-		// panel 크기 조절
+		// panel ũ�� ����
 		
-		//============== 제목 설정 부분 ========================
+		//============== ���� ���� �κ� ========================
 		
 		JLabel title1 = new JLabel("스터디카페 다니고");
 		JLabel title2 = new JLabel("나의 성공시대");
 		JLabel title3 = new JLabel("시작됐다");
 		
-		title1.setBounds(65,150,600,60);// 크기 조절
-		title1.setForeground(textColor);// 색상
+		title1.setBounds(65,150,600,60);// ũ�� ����
+		title1.setForeground(textColor);// ����
 		title2.setBounds(65,180,600,60);
 		title2.setForeground(textColor);
 		title3.setBounds(65,210,600,60);
 		title3.setForeground(textColor);
 		
-		// font 설정
+		// font ����
 		title1.setFont(f1);
 		title2.setFont(f1);
 		title3.setFont(f1);
 		//=================================================
 		
-		//==================== 텍스트 필드 설정 ==============
+		//==================== �ؽ�Ʈ �ʵ� ���� ==============
 		
 		JTextField phonenumber = new JTextField("Phone Number");
 		JTextField password = new JTextField("password.");
@@ -77,7 +77,7 @@ public class Login extends JPanel{
 		
 		//===================================================
 		
-		//===============  버튼 설정 =================
+		//===============  ��ư ���� =================
 		
 		Image loginicon = new ImageIcon("img/loginimg.png").getImage().getScaledInstance(230, 50, 0);
 		Image singUpicon = new ImageIcon("img/singUpimg.png").getImage().getScaledInstance(110, 40, 0);
@@ -88,7 +88,7 @@ public class Login extends JPanel{
 		JButton findPwd = new JButton(new ImageIcon(findPwdicon));
 		findPwd.setBorderPainted(false);
 		
-		loginButton.setBounds(65,365,230,50); //로그인 버튼 크기 조절
+		loginButton.setBounds(65,365,230,50); //�α��� ��ư ũ�� ����
 		signUp.setBounds(65,420,110,40);
 		findPwd.setBounds(185,420,110,40);
 		
@@ -121,7 +121,7 @@ public class Login extends JPanel{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			ChangePanel.changePanel(mf, mainpage, new sigUP());
+			ChangePanel.changePanel(mf, mainpage, new Payment());
 			
 		}	
 	}
