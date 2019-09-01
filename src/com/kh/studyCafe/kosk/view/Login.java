@@ -66,7 +66,7 @@ public class Login extends JPanel{
 		//==================== 텍스트 필드 설정 ==============
 		
 		JTextField phonenumber = new JTextField("Phone Number");
-		JTextField password = new JTextField("password");
+		JTextField password = new JTextField("password.");
 		
 		phonenumber.setBounds(65,275,230,40);
 		phonenumber.setLayout(null);
