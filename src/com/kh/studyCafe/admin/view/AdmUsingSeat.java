@@ -27,7 +27,7 @@ public class AdmUsingSeat extends JPanel implements ActionListener {
 		title.setForeground(new Color(127,118,104));
 		title.setFont(new Font("¸¼Àº °íµñ",Font.BOLD,24));
 		title.setSize(title.getPreferredSize());
-		
+		  
 		JButton closeBtn = new JButton("Close");
 		
 		closeBtn.setBounds(45,120,326,50);

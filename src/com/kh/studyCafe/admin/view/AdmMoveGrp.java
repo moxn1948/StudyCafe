@@ -33,7 +33,7 @@ public class AdmMoveGrp extends JPanel implements ActionListener{
 		/*//subTitle텍스트 설정
 		JLabel subTitle = new JLabel("스터디룸은 이동이 불가능합니다.");
 		//340,75
-		
+		  
 		subTitle.setLocation(120, 104);
 		subTitle.setForeground(new Color(127,118,104));//색같은데.
 		subTitle.setFont(new Font("맑은 고딕",Font.BOLD,24));
