@@ -1,10 +1,12 @@
 package com.kh.studyCafe.kosk.run;
 
+import com.kh.studyCafe.kosk.view.KoskMainFrame;
+
 public class Run {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		KoskMainFrame kmf = new KoskMainFrame();
+		
 	}
 
 }
