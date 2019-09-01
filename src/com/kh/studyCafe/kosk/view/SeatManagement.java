@@ -22,7 +22,7 @@ public class SeatManagement extends JPanel{
 		
 		Color wallPapers = new Color(239,234,222);
 		Color textColor = new Color(127,118,104);
-				
+			 	
 		//=================
 		
 		//================ Frame 설정 ======================

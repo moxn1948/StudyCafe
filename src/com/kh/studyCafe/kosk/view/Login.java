@@ -19,7 +19,7 @@ public class Login extends JPanel{
 	private JPanel mainpage;
 	
 	public Login(KoskMainFrame mf) {
-		this.mf = mf;
+		this.mf = mf; 
 		mainpage = this;
 		
 		//======= �� ���� ====

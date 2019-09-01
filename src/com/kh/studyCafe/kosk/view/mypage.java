@@ -19,7 +19,7 @@ public class mypage extends JPanel{
 		//===== ���� ���� =====
 		Color wallPapers = new Color(239,234,222);
 		Color textColor = new Color(127,118,104);
-				
+				 
 		//===============
 				
 		//===== JPanel ���� =======

@@ -17,7 +17,7 @@ public KoskSeatTable() {
 		JButton[] dfuser = new JButton[2];
 		JButton[] dsuser = new JButton[2];
 		JButton[] deuser = new JButton[1];
-		
+		 
 		JButton logOut = new JButton("로그아웃");
 		JButton myPage = new JButton("마이페이지");
 		
