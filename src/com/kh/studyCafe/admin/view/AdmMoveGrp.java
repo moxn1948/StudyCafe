@@ -11,51 +11,51 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class AdmMoveGrp extends JPanel implements ActionListener{
-//ÀÚ¸®ÀÌµ¿ ÆË¾÷ 2¹ø
-//ÀÌ°ÅÇÏ³ªµÊ...	
+//ìë¦¬ì´ë™ íŒì—… 2ë²ˆ
+//ì´ê±°í•˜ë‚˜ë¨...	
 	
 	public AdmMoveGrp() {
 		
-		//ÆĞ³Î ¼³Á¤
-		this.setBounds(270,203,410,193); //¿Àºì
+		//íŒ¨ë„ ì„¤ì •
+		this.setBounds(270,203,410,193); //ì˜¤ë¸
 		this.setBackground(new Color(239,234,222));
 		this.setBorder(BorderFactory.createLineBorder(new Color(189,177,157)));
 	
-		//title ÅØ½ºÆ® ¼³Á¤
-		JLabel title = new JLabel("½ºÅÍµğ·ëÀº ÀÌµ¿ÀÌ ºÒ°¡´ÉÇÕ´Ï´Ù.");
+		//title í…ìŠ¤íŠ¸ ì„¤ì •
+		JLabel title = new JLabel("ìŠ¤í„°ë””ë£¸ì€ ì´ë™ì´ ë¶ˆê°€ëŠ¥í•©ë‹ˆë‹¤.");
 	 
 		    
 		title.setLocation(29, 43);
 		title.setForeground(new Color(127,118,104));
-		title.setFont(new Font("¸¼Àº °íµñ",Font.BOLD,24));
+		title.setFont(new Font("ë§‘ì€ ê³ ë”•",Font.BOLD,24));
 		title.setSize(title.getPreferredSize());
 		
-		/*//subTitleÅØ½ºÆ® ¼³Á¤
-		JLabel subTitle = new JLabel("½ºÅÍµğ·ëÀº ÀÌµ¿ÀÌ ºÒ°¡´ÉÇÕ´Ï´Ù.");
+		/*//subTitleí…ìŠ¤íŠ¸ ì„¤ì •
+		JLabel subTitle = new JLabel("ìŠ¤í„°ë””ë£¸ì€ ì´ë™ì´ ë¶ˆê°€ëŠ¥í•©ë‹ˆë‹¤.");
 		//340,75
 		  
 		subTitle.setLocation(120, 104);
-		subTitle.setForeground(new Color(127,118,104));//»ö°°Àºµ¥.
-		subTitle.setFont(new Font("¸¼Àº °íµñ",Font.BOLD,24));
+		subTitle.setForeground(new Color(127,118,104));//ìƒ‰ê°™ì€ë°.
+		subTitle.setFont(new Font("ë§‘ì€ ê³ ë”•",Font.BOLD,24));
 		subTitle.setSize(subTitle.getPreferredSize());
 		*/
-		//¹öÆ° ¼³Á¤
+		//ë²„íŠ¼ ì„¤ì •
 		JButton closeBtn = new JButton("Close");
 		
-		//close¹ö
+		//closeë²„
 		
-//		closeBtn.setLocation(600,543); ÀÌ°Ç °Á ÇØº»°Å..
+//		closeBtn.setLocation(600,543); ì´ê±´ ê± í•´ë³¸ê±°..
 		closeBtn.setBounds(45,120,326,50);
 		
-		closeBtn.setBackground(new Color(18,177,157)); //ÄÃ·¯
+		closeBtn.setBackground(new Color(18,177,157)); //ì»¬ëŸ¬
 		
-		closeBtn.setFont(new Font("¸¼Àº °íµñ",Font.BOLD,18)); 	
+		closeBtn.setFont(new Font("ë§‘ì€ ê³ ë”•",Font.BOLD,18)); 	
 		
 		closeBtn.setForeground(Color.WHITE);
 		
 		
 		
-		//ÆĞ³Î¿¡ ¿Ã¸®±â
+		//íŒ¨ë„ì— ì˜¬ë¦¬ê¸°
 		this.add(title);
 //		this.add(subTitle);
 		this.add(closeBtn);
@@ -75,7 +75,7 @@ public class AdmMoveGrp extends JPanel implements ActionListener{
 	
 	
 	
-	//ÀÚ¸®ÀÌµ¿
-	//½ºÅÍµğ·ë ÀÌµ¿ ºÒ°¡ÆË¾÷
+	//ìë¦¬ì´ë™
+	//ìŠ¤í„°ë””ë£¸ ì´ë™ ë¶ˆê°€íŒì—…
 
 }

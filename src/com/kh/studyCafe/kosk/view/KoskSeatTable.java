@@ -18,8 +18,8 @@ public KoskSeatTable() {
 		JButton[] dsuser = new JButton[2];
 		JButton[] deuser = new JButton[1];
 		
-		JButton logOut = new JButton("·Î±×¾Æ¿ô");
-		JButton myPage = new JButton("¸¶ÀÌÆäÀÌÁö");
+		JButton logOut = new JButton("ë¡œê·¸ì•„ì›ƒ");
+		JButton myPage = new JButton("ë§ˆì´í˜ì´ì§€");
 		
 		int f = 0, s = 0, e = 0;
 		
@@ -37,8 +37,8 @@ public KoskSeatTable() {
 		panel.setBackground(new Color(239, 234, 222));
 		panel.setSize(700, 1000);
 		
-		Font font1 = new Font("µ¸¿ò", Font.BOLD, 32);
-		JLabel label = new JLabel("ÁÂ¼®Ç¥");
+		Font font1 = new Font("ë‹ì›€", Font.BOLD, 32);
+		JLabel label = new JLabel("ì¢Œì„í‘œ");
 		label.setForeground(new Color(127, 118, 104));
 		label.setFont(font1);
 		label.setLocation(131, 50);

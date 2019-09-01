@@ -16,185 +16,185 @@ import javax.swing.JTextField;
 
 public class AdmNewIndvSelectTime extends JPanel implements ActionListener{
 
-	public AdmNewIndvSelectTime() {
-		// ∆–≥Œ º≥¡§
-		int w = 731;
-		int h = 474;
-		int x = popPosition(w, h)[0];
-		int y = popPosition(w, h)[1];
-		
-		this.setBounds(x, y, w, h); 
-		this.setBackground(new Color(239, 234, 222));
-		this.setBorder(BorderFactory.createLineBorder(new Color(163, 152, 134)));
+   public AdmNewIndvSelectTime() {
+      // Ìå®ÎÑê ÏÑ§Ï†ï
+      int w = 731;
+      int h = 474;
+      int x = popPosition(w, h)[0];
+      int y = popPosition(w, h)[1];
+      
+      this.setBounds(x, y, w, h); 
+      this.setBackground(new Color(239, 234, 222));
+      this.setBorder(BorderFactory.createLineBorder(new Color(163, 152, 134)));
 
 
-		JLayeredPane hourLayer = new JLayeredPane();
-		hourLayer.setBounds(30,28,334,349);
-		hourLayer.setBorder(BorderFactory.createLineBorder(new Color(127, 118, 104)));
-		
-		// ¿Œø¯ ≈ÿΩ∫∆Æ º≥¡§
-		JRadioButton userCount = new JRadioButton("¿Œø¯");
-		
-		userCount.setBackground(new Color(239, 234, 222));
-		userCount.setLocation(124, 34);
-		userCount.setForeground(new Color(127, 118, 104));
-		userCount.setFont(new Font("∏º¿∫ ∞ÌµÒ", Font.BOLD, 28));
-		userCount.setSize(userCount.getPreferredSize());
-		
-		// √— ¿Œø¯ «•Ω√
-		JLabel totalUserCount = new JLabel("√— ¿Œø¯");
+      JLayeredPane hourLayer = new JLayeredPane();
+      hourLayer.setBounds(30,28,334,349);
+      hourLayer.setBorder(BorderFactory.createLineBorder(new Color(127, 118, 104)));
+      
+      // Ïù∏Ïõê ÌÖçÏä§Ìä∏ ÏÑ§Ï†ï
+      JRadioButton userCount = new JRadioButton("Ïù∏Ïõê");
+      
+      userCount.setBackground(new Color(239, 234, 222));
+      userCount.setLocation(124, 34);
+      userCount.setForeground(new Color(127, 118, 104));
+      userCount.setFont(new Font("ÎßëÏùÄ Í≥†Îîï", Font.BOLD, 28));
+      userCount.setSize(userCount.getPreferredSize());
+      
+      // Ï¥ù Ïù∏Ïõê ÌëúÏãú
+      JLabel totalUserCount = new JLabel("Ï¥ù Ïù∏Ïõê");
 
-		totalUserCount.setLocation(113, 102);
-		totalUserCount.setForeground(new Color(127, 118, 104));
-		totalUserCount.setFont(new Font("∏º¿∫ ∞ÌµÒ", Font.BOLD, 20));
-		totalUserCount.setSize(totalUserCount.getPreferredSize());
-		
-		// √— ¿Œø¯ - ∏Ìºˆ «•Ω√
-		JLabel totalUserCountNum = new JLabel("2∏Ì");
+      totalUserCount.setLocation(113, 102);
+      totalUserCount.setForeground(new Color(127, 118, 104));
+      totalUserCount.setFont(new Font("ÎßëÏùÄ Í≥†Îîï", Font.BOLD, 20));
+      totalUserCount.setSize(totalUserCount.getPreferredSize());
+      
+      // Ï¥ù Ïù∏Ïõê - Î™ÖÏàò ÌëúÏãú
+      JLabel totalUserCountNum = new JLabel("2Î™Ö");
 
-		totalUserCountNum.setLocation(187, 102);
-		totalUserCountNum.setForeground(new Color(127, 118, 104));
-		totalUserCountNum.setFont(new Font("∏º¿∫ ∞ÌµÒ", Font.BOLD, 20));
-		totalUserCountNum.setSize(totalUserCountNum.getPreferredSize());
+      totalUserCountNum.setLocation(187, 102);
+      totalUserCountNum.setForeground(new Color(127, 118, 104));
+      totalUserCountNum.setFont(new Font("ÎßëÏùÄ Í≥†Îîï", Font.BOLD, 20));
+      totalUserCountNum.setSize(totalUserCountNum.getPreferredSize());
 
-		// +, - πˆ∆∞ º≥¡§
-		JButton countUpBtn = new JButton("+");
-		JButton countDownBtn = new JButton("-");
-		
-		countUpBtn.setBounds(66, 166, 200, 44);
-		countDownBtn.setBounds(66, 262, 200, 44);
-		countUpBtn.setBackground(new Color(127, 118, 104));
-		countDownBtn.setBackground(new Color(127, 118, 104));
-		countUpBtn.setForeground(Color.WHITE);
-		countUpBtn.setFont(new Font("∏º¿∫ ∞ÌµÒ", Font.BOLD, 30));
-		countDownBtn.setForeground(Color.WHITE);
-		countDownBtn.setFont(new Font("∏º¿∫ ∞ÌµÒ", Font.BOLD, 30));
-		countUpBtn.setBorder(BorderFactory.createLineBorder(new Color(189, 177, 157)));
-		countDownBtn.setBorder(BorderFactory.createLineBorder(new Color(163, 152, 134)));
-		
-		
-		// ¿Œø¯ «•Ω√
-		JTextField countDisplay = new JTextField("2");
-		countDisplay.setBounds(66, 216, 200, 40);
-		countDisplay.setBackground(Color.WHITE);
-		countDisplay.setForeground(new Color(127, 118, 104));
-		countDisplay.setFont(new Font("∏º¿∫ ∞ÌµÒ", Font.BOLD, 22));
-		countDisplay.setBorder(BorderFactory.createEmptyBorder());
-		countDisplay.setHorizontalAlignment(JTextField.CENTER);
-		
-		
-		hourLayer.add(userCount);
-		hourLayer.add(totalUserCount); 
-		hourLayer.add(totalUserCountNum);
-		hourLayer.add(countUpBtn);
-		hourLayer.add(countDownBtn);
-		hourLayer.add(countDisplay);
-		
+      // +, - Î≤ÑÌäº ÏÑ§Ï†ï
+      JButton countUpBtn = new JButton("+");
+      JButton countDownBtn = new JButton("-");
+      
+      countUpBtn.setBounds(66, 166, 200, 44);
+      countDownBtn.setBounds(66, 262, 200, 44);
+      countUpBtn.setBackground(new Color(127, 118, 104));
+      countDownBtn.setBackground(new Color(127, 118, 104));
+      countUpBtn.setForeground(Color.WHITE);
+      countUpBtn.setFont(new Font("ÎßëÏùÄ Í≥†Îîï", Font.BOLD, 30));
+      countDownBtn.setForeground(Color.WHITE);
+      countDownBtn.setFont(new Font("ÎßëÏùÄ Í≥†Îîï", Font.BOLD, 30));
+      countUpBtn.setBorder(BorderFactory.createLineBorder(new Color(189, 177, 157)));
+      countDownBtn.setBorder(BorderFactory.createLineBorder(new Color(163, 152, 134)));
+      
+      
+      // Ïù∏Ïõê ÌëúÏãú
+      JTextField countDisplay = new JTextField("2");
+      countDisplay.setBounds(66, 216, 200, 40);
+      countDisplay.setBackground(Color.WHITE);
+      countDisplay.setForeground(new Color(127, 118, 104));
+      countDisplay.setFont(new Font("ÎßëÏùÄ Í≥†Îîï", Font.BOLD, 22));
+      countDisplay.setBorder(BorderFactory.createEmptyBorder());
+      countDisplay.setHorizontalAlignment(JTextField.CENTER);
+      
+      
+      hourLayer.add(userCount);
+      hourLayer.add(totalUserCount); 
+      hourLayer.add(totalUserCountNum);
+      hourLayer.add(countUpBtn);
+      hourLayer.add(countDownBtn);
+      hourLayer.add(countDisplay);
+      
 
-		JLayeredPane weekLayer = new JLayeredPane();
-		weekLayer.setBounds(368,28,334,349);
-		weekLayer.setBorder(BorderFactory.createLineBorder(new Color(127, 118, 104)));
+      JLayeredPane weekLayer = new JLayeredPane();
+      weekLayer.setBounds(368,28,334,349);
+      weekLayer.setBorder(BorderFactory.createLineBorder(new Color(127, 118, 104)));
 
-		// Ω√∞£ ≈ÿΩ∫∆Æ º≥¡§
-		JRadioButton userTime = new JRadioButton("Ω√∞£");
+      // ÏãúÍ∞Ñ ÌÖçÏä§Ìä∏ ÏÑ§Ï†ï
+      JRadioButton userTime = new JRadioButton("ÏãúÍ∞Ñ");
 
-		userTime.setBackground(new Color(239, 234, 222));
+      userTime.setBackground(new Color(239, 234, 222));
 
-		userTime.setLocation(125, 36);
-		userTime.setForeground(new Color(127, 118, 104));
-		userTime.setFont(new Font("∏º¿∫ ∞ÌµÒ", Font.BOLD, 28));
-		userTime.setSize(userTime.getPreferredSize());
+      userTime.setLocation(125, 36);
+      userTime.setForeground(new Color(127, 118, 104));
+      userTime.setFont(new Font("ÎßëÏùÄ Í≥†Îîï", Font.BOLD, 28));
+      userTime.setSize(userTime.getPreferredSize());
 
 
-		// √— Ω√∞£ «•Ω√
-		JLabel totalUserTime = new JLabel("¿ÃøÎ«œΩ« Ω√∞£");
+      // Ï¥ù ÏãúÍ∞Ñ ÌëúÏãú
+      JLabel totalUserTime = new JLabel("Ïù¥Ïö©ÌïòÏã§ ÏãúÍ∞Ñ");
 
-		totalUserTime.setLocation(66, 102);
-		totalUserTime.setForeground(new Color(127, 118, 104));
-		totalUserTime.setFont(new Font("∏º¿∫ ∞ÌµÒ", Font.BOLD, 20));
-		totalUserTime.setSize(totalUserTime.getPreferredSize());
-		
-		// √— Ω√∞£ - Ω√∞£ «•Ω√
-		JLabel totalUserTimeNum = new JLabel("02:00");
+      totalUserTime.setLocation(66, 102);
+      totalUserTime.setForeground(new Color(127, 118, 104));
+      totalUserTime.setFont(new Font("ÎßëÏùÄ Í≥†Îîï", Font.BOLD, 20));
+      totalUserTime.setSize(totalUserTime.getPreferredSize());
+      
+      // Ï¥ù ÏãúÍ∞Ñ - ÏãúÍ∞Ñ ÌëúÏãú
+      JLabel totalUserTimeNum = new JLabel("02:00");
 
-		totalUserTimeNum.setLocation(207, 102);
-		totalUserTimeNum.setForeground(new Color(127, 118, 104));
-		totalUserTimeNum.setFont(new Font("∏º¿∫ ∞ÌµÒ", Font.BOLD, 20));
-		totalUserTimeNum.setSize(totalUserTimeNum.getPreferredSize());
-		
-		// +, - πˆ∆∞ º≥¡§
-		JButton timeUpBtn = new JButton("+");
-		JButton timeDownBtn = new JButton("-");
+      totalUserTimeNum.setLocation(207, 102);
+      totalUserTimeNum.setForeground(new Color(127, 118, 104));
+      totalUserTimeNum.setFont(new Font("ÎßëÏùÄ Í≥†Îîï", Font.BOLD, 20));
+      totalUserTimeNum.setSize(totalUserTimeNum.getPreferredSize());
+      
+      // +, - Î≤ÑÌäº ÏÑ§Ï†ï
+      JButton timeUpBtn = new JButton("+");
+      JButton timeDownBtn = new JButton("-");
 
-		timeUpBtn.setBounds(66, 166, 200, 44);
-		timeDownBtn.setBounds(66, 262, 200, 44);
-		timeUpBtn.setBackground(new Color(127, 118, 104));
-		timeDownBtn.setBackground(new Color(127, 118, 104));
-		timeUpBtn.setForeground(Color.WHITE);
-		timeUpBtn.setFont(new Font("∏º¿∫ ∞ÌµÒ", Font.BOLD, 30));
-		timeDownBtn.setForeground(Color.WHITE);
-		timeDownBtn.setFont(new Font("∏º¿∫ ∞ÌµÒ", Font.BOLD, 30));
-		timeUpBtn.setBorder(BorderFactory.createLineBorder(new Color(189, 177, 157)));
-		timeDownBtn.setBorder(BorderFactory.createLineBorder(new Color(163, 152, 134)));
+      timeUpBtn.setBounds(66, 166, 200, 44);
+      timeDownBtn.setBounds(66, 262, 200, 44);
+      timeUpBtn.setBackground(new Color(127, 118, 104));
+      timeDownBtn.setBackground(new Color(127, 118, 104));
+      timeUpBtn.setForeground(Color.WHITE);
+      timeUpBtn.setFont(new Font("ÎßëÏùÄ Í≥†Îîï", Font.BOLD, 30));
+      timeDownBtn.setForeground(Color.WHITE);
+      timeDownBtn.setFont(new Font("ÎßëÏùÄ Í≥†Îîï", Font.BOLD, 30));
+      timeUpBtn.setBorder(BorderFactory.createLineBorder(new Color(189, 177, 157)));
+      timeDownBtn.setBorder(BorderFactory.createLineBorder(new Color(163, 152, 134)));
 
-		
-		// Ω√∞£ «•Ω√
-		JTextField timeDisplay = new JTextField("02:00");
+      
+      // ÏãúÍ∞Ñ ÌëúÏãú
+      JTextField timeDisplay = new JTextField("02:00");
 
-		timeDisplay.setBounds(66, 216, 200, 40);
-		timeDisplay.setBackground(Color.WHITE);
-		timeDisplay.setForeground(new Color(127, 118, 104));
-		timeDisplay.setFont(new Font("∏º¿∫ ∞ÌµÒ", Font.BOLD, 22));
-		timeDisplay.setBorder(BorderFactory.createEmptyBorder());
-		timeDisplay.setHorizontalAlignment(JTextField.CENTER);
+      timeDisplay.setBounds(66, 216, 200, 40);
+      timeDisplay.setBackground(Color.WHITE);
+      timeDisplay.setForeground(new Color(127, 118, 104));
+      timeDisplay.setFont(new Font("ÎßëÏùÄ Í≥†Îîï", Font.BOLD, 22));
+      timeDisplay.setBorder(BorderFactory.createEmptyBorder());
+      timeDisplay.setHorizontalAlignment(JTextField.CENTER);
 
-		weekLayer.add(userTime);
-		weekLayer.add(totalUserTime);
-		weekLayer.add(totalUserTimeNum);
-		weekLayer.add(timeUpBtn);
-		weekLayer.add(timeDownBtn);
-		weekLayer.add(timeDisplay);	
-		
-		// πˆ∆∞ º≥¡§
-		JButton cancelBtn = new JButton("Cancel");
-		JButton confirmBtn = new JButton("Confirm");
+      weekLayer.add(userTime);
+      weekLayer.add(totalUserTime);
+      weekLayer.add(totalUserTimeNum);
+      weekLayer.add(timeUpBtn);
+      weekLayer.add(timeDownBtn);
+      weekLayer.add(timeDisplay);   
+      
+      // Î≤ÑÌäº ÏÑ§Ï†ï
+      JButton cancelBtn = new JButton("Cancel");
+      JButton confirmBtn = new JButton("Confirm");
 
-		cancelBtn.setBounds(30, 390, 334, 50);
-		confirmBtn.setBounds(368,390, 334, 50);
-		cancelBtn.setBackground(new Color(189, 177, 157));
-		confirmBtn.setBackground(new Color(163, 152, 134));
-		cancelBtn.setForeground(Color.WHITE);
-		cancelBtn.setFont(new Font("∏º¿∫ ∞ÌµÒ", Font.BOLD, 18));
-		confirmBtn.setForeground(Color.WHITE);
-		confirmBtn.setFont(new Font("∏º¿∫ ∞ÌµÒ", Font.BOLD, 18));
-		cancelBtn.setBorder(BorderFactory.createLineBorder(new Color(189, 177, 157)));
-		confirmBtn.setBorder(BorderFactory.createLineBorder(new Color(163, 152, 134)));
-		
-		ButtonGroup timeRadio = new ButtonGroup();
-		timeRadio.add(userCount);
-		timeRadio.add(userTime);
-		
-		this.add(hourLayer);
-		this.add(weekLayer);
-		
-		this.add(cancelBtn);
-		this.add(confirmBtn);
-		
-	}
+      cancelBtn.setBounds(30, 390, 334, 50);
+      confirmBtn.setBounds(368,390, 334, 50);
+      cancelBtn.setBackground(new Color(189, 177, 157));
+      confirmBtn.setBackground(new Color(163, 152, 134));
+      cancelBtn.setForeground(Color.WHITE);
+      cancelBtn.setFont(new Font("ÎßëÏùÄ Í≥†Îîï", Font.BOLD, 18));
+      confirmBtn.setForeground(Color.WHITE);
+      confirmBtn.setFont(new Font("ÎßëÏùÄ Í≥†Îîï", Font.BOLD, 18));
+      cancelBtn.setBorder(BorderFactory.createLineBorder(new Color(189, 177, 157)));
+      confirmBtn.setBorder(BorderFactory.createLineBorder(new Color(163, 152, 134)));
+      
+      ButtonGroup timeRadio = new ButtonGroup();
+      timeRadio.add(userCount);
+      timeRadio.add(userTime);
+      
+      this.add(hourLayer);
+      this.add(weekLayer);
+      
+      this.add(cancelBtn);
+      this.add(confirmBtn);
+      
+   }
 
-	public int[] popPosition(int w, int h) {
-		int[] position = new int[2];
-		
-		position[0] = (962 - w) / 2;
-		position[1] = (662 - h) / 2;
-		
-		return position;
-	}
-	
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
+   public int[] popPosition(int w, int h) {
+      int[] position = new int[2];
+      
+      position[0] = (962 - w) / 2;
+      position[1] = (662 - h) / 2;
+      
+      return position;
+   }
+   
+   @Override
+   public void actionPerformed(ActionEvent e) {
+      // TODO Auto-generated method stub
+      
+   }
 
 }

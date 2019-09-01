@@ -14,7 +14,7 @@ import javax.swing.JPanel;
 public class AdmExitTimeWeek extends JPanel implements ActionListener{
 	
 	public AdmExitTimeWeek() {
-		// ÆĞ³Î ¼³Á¤
+		// íŒ¨ë„ ì„¤ì •
 		int w = 410;
 		int h = 274;
 		int x = popPosition(w, h)[0];
@@ -24,39 +24,39 @@ public class AdmExitTimeWeek extends JPanel implements ActionListener{
 		this.setBackground(new Color(239, 234, 222));
 		this.setBorder(BorderFactory.createLineBorder(new Color(189, 177, 157)));
 		
-		// title ÅØ½ºÆ® ¼³Á¤
-		JLabel title = new JLabel("±â°£±Ç Åğ½Ç");
+		// title í…ìŠ¤íŠ¸ ì„¤ì •
+		JLabel title = new JLabel("ê¸°ê°„ê¶Œ í‡´ì‹¤");
 
 		title.setLocation(120, 32);
 		title.setForeground(new Color(127, 118, 104));
-		title.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 32));
+		title.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 32));
 		title.setSize(title.getPreferredSize());
 		
-		// subTitle ÅØ½ºÆ® ¼³Á¤
-		JLabel subTitle = new JLabel("ÀÜ¿©½Ã°£");
+		// subTitle í…ìŠ¤íŠ¸ ì„¤ì •
+		JLabel subTitle = new JLabel("ì”ì—¬ì‹œê°„");
 
 		subTitle.setLocation(120, 104);
 		subTitle.setForeground(new Color(127, 118, 104));
-		subTitle.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 24));
+		subTitle.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 24));
 		subTitle.setSize(subTitle.getPreferredSize());
 		
-		// ÀÜ¿©½Ã°£ ÅØ½ºÆ® ¼³Á¤
-		JLabel remainTime = new JLabel("25ÀÏ"); // ³ªÁß¿¡ µ¥ÀÌÅÍ ¹Ş¾Æ¼­ °ª ¿Ã·Á¾ßÇÔ
+		// ì”ì—¬ì‹œê°„ í…ìŠ¤íŠ¸ ì„¤ì •
+		JLabel remainTime = new JLabel("25ì¼"); // ë‚˜ì¤‘ì— ë°ì´í„° ë°›ì•„ì„œ ê°’ ì˜¬ë ¤ì•¼í•¨
 
 		remainTime.setLocation(237, 104);
 		remainTime.setForeground(new Color(127, 118, 104));
-		remainTime.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 24));
+		remainTime.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 24));
 		remainTime.setSize(remainTime.getPreferredSize());
 		
-		// È¯ºÒ Ã¼Å©¹Ú½º ¼³Á¤
-		JCheckBox refundChk = new JCheckBox("È¯ºÒÇÏ½Ã°Ú½À´Ï±î?");
+		// í™˜ë¶ˆ ì²´í¬ë°•ìŠ¤ ì„¤ì •
+		JCheckBox refundChk = new JCheckBox("í™˜ë¶ˆí•˜ì‹œê² ìŠµë‹ˆê¹Œ?");
 		refundChk.setLocation(17, 168);
 		refundChk.setOpaque(false);
 		refundChk.setForeground(new Color(127, 118, 104));
-		refundChk.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 18));
+		refundChk.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 18));
 		refundChk.setSize(refundChk.getPreferredSize());
 		
-		// ¹öÆ° ¼³Á¤
+		// ë²„íŠ¼ ì„¤ì •
 		JButton cancelBtn = new JButton("Cancel");
 		JButton confirmBtn = new JButton("Confirm");
 		
@@ -65,13 +65,13 @@ public class AdmExitTimeWeek extends JPanel implements ActionListener{
 		cancelBtn.setBackground(new Color(189, 177, 157));
 		confirmBtn.setBackground(new Color(163, 152, 134));
 		cancelBtn.setForeground(Color.WHITE);
-		cancelBtn.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 18));
+		cancelBtn.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 18));
 		confirmBtn.setForeground(Color.WHITE);
-		confirmBtn.setFont(new Font("¸¼Àº °íµñ", Font.BOLD, 18));
+		confirmBtn.setFont(new Font("ë§‘ì€ ê³ ë”•", Font.BOLD, 18));
 		cancelBtn.setBorder(BorderFactory.createLineBorder(new Color(189, 177, 157)));
 		confirmBtn.setBorder(BorderFactory.createLineBorder(new Color(163, 152, 134)));
 		
-		// ÆĞ³Î¿¡ ¿Ã¸®±â
+		// íŒ¨ë„ì— ì˜¬ë¦¬ê¸°
 		this.add(title);
 		this.add(subTitle);
 		this.add(remainTime);

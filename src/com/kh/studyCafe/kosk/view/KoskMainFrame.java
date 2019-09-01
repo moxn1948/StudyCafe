@@ -14,8 +14,7 @@ public class KoskMainFrame extends JFrame{
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 	
-	
-
+}
 
 // public class KoskMainFrame extends JFrame{
 // 	public KoskMainFrame() {

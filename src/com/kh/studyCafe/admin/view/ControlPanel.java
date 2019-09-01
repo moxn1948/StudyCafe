@@ -4,19 +4,19 @@ import javax.swing.JPanel;
 
 public class ControlPanel{
 	
-	public void changePanel(AdmMainFrame mf, JPanel op, JPanel np) { // ÀÖ´ø ÆĞ³Î Áö¿ì°í »õ ÆĞ³Î ¿Ã¸®±â
+	public void changePanel(AdmMainFrame mf, JPanel op, JPanel np) { // ìˆë˜ íŒ¨ë„ ì§€ìš°ê³  ìƒˆ íŒ¨ë„ ì˜¬ë¦¬ê¸°
 		mf.remove(op);
 		mf.add(np);
 		mf.repaint();
 
 	}
 
-	public void addPanel(AdmMainFrame mf, JPanel op, JPanel np) { // ÀÖ´ø ÆĞ³Î À¯ÁöÇÏ°í »õ ÆĞ³Î ¿Ã¸®±ä
+	public void addPanel(AdmMainFrame mf, JPanel op, JPanel np) { // ìˆë˜ íŒ¨ë„ ìœ ì§€í•˜ê³  ìƒˆ íŒ¨ë„ ì˜¬ë¦¬ê¸´
 		mf.add(np, 1, 0);
 		mf.repaint();
 	}
 	
-	public void changeTablePanel(AdmMainFrame mf, JPanel op, JPanel np) { // ÀÖ´ø ÆĞ³Î Áö¿ì°í »õ ÆĞ³Î ¿Ã¸®±â
+	public void changeTablePanel(AdmMainFrame mf, JPanel op, JPanel np) { // ìˆë˜ íŒ¨ë„ ì§€ìš°ê³  ìƒˆ íŒ¨ë„ ì˜¬ë¦¬ê¸°
 		mf.remove(op);
 		mf.add(np);
 		mf.revalidate();

@@ -18,52 +18,52 @@ public class sigUP extends JPanel{
 	private KoskMainFrame mf;
 	private JPanel sigup;
 	public sigUP() {
-		//========= JFrame ¼³Á¤ ============
+		//========= JFrame ì„¤ì • ============
 		this.setSize(360,640);
 		//===============================
 		
-		//===== »ö»ó ¼³Á¤ =====
+		//===== ìƒ‰ìƒ ì„¤ì • =====
 		Color wallPapers = new Color(239,234,222);
 		Color textColor = new Color(127,118,104);
 				
 		//===============
 				
 		
-		//===== JPanel ¼³Á¤ =======
+		//===== JPanel ì„¤ì • =======
 		this.setLayout(null);
 		this.setBackground(wallPapers);
 		//=======================
 		
 		
-		//============ font ¼³Á¤ ==========
+		//============ font ì„¤ì • ==========
 		Font siguptext = new Font("Noto Sans KR",Font.BOLD,30);
 		Font inputtext = new Font("Noto Sans KR",Font.BOLD,17);
 		Font checktext = new Font("Noto Sans KR",Font.BOLD,14);
 	
 		//===============================
 		
-		//==== ½ºÅÍµğ Ä«Æä ¾ÆÀÌÄÜ ¼³Á¤ ===============
+		//==== ìŠ¤í„°ë”” ì¹´í˜ ì•„ì´ì½˜ ì„¤ì • ===============
 		Image imgicon = new ImageIcon("img/imgicon.png").getImage().getScaledInstance(30, 30, 0);
 		JLabel ib = new JLabel("",(new ImageIcon(imgicon)),SwingUtilities.CENTER);
 		ib.setBounds(150,0,50,50);
 		//===============================
 		
-		//=======  È¸¿ø °¡ÀÔ  ¼³Á¤ ================
-	   JLabel text = new JLabel("È¸¿ø°¡ÀÔ");
+		//=======  íšŒì› ê°€ì…  ì„¤ì • ================
+	   JLabel text = new JLabel("íšŒì›ê°€ì…");
 	   text.setBounds(110,80,150,50);
 	   text.setLayout(null);
 	   text.setFont(siguptext);
 	   text.setForeground(textColor);
 		//===================================
 	
-		//========= ÀÔ·Â Ä­ ===================
-	   JLabel name = new JLabel("ÀÌ¸§"); //ÀÌ¸§ ¶óº§
+		//========= ì…ë ¥ ì¹¸ ===================
+	   JLabel name = new JLabel("ì´ë¦„"); //ì´ë¦„ ë¼ë²¨
 	   name.setBounds(30, 170, 40, 30);
 	   name.setFont(inputtext);
 	   name.setForeground(textColor);
 	   
-	   JLabel phnumber = new JLabel("ÈŞ´ëÆù");
-	   JLabel phnumber2 = new JLabel("¹øÈ£");
+	   JLabel phnumber = new JLabel("íœ´ëŒ€í°");
+	   JLabel phnumber2 = new JLabel("ë²ˆí˜¸");
 	   phnumber.setBounds(30,230,60,30);
 	   phnumber2.setBounds(30,250,60,30);
 	   phnumber.setFont(inputtext);
@@ -71,13 +71,13 @@ public class sigUP extends JPanel{
 	   phnumber.setForeground(textColor);
 	   phnumber2.setForeground(textColor);
 	   
-	   JLabel psswd = new JLabel("ºñ¹Ğ¹øÈ£");
+	   JLabel psswd = new JLabel("ë¹„ë°€ë²ˆí˜¸");
 	   psswd.setBounds(30,310,80,30);
 	   psswd.setForeground(textColor);
 	   psswd.setFont(inputtext);
 	   
-	   JLabel psswdch = new JLabel("ºñ¹Ğ¹øÈ£");
-	   JLabel psswdch2 = new JLabel("È®ÀÎ");
+	   JLabel psswdch = new JLabel("ë¹„ë°€ë²ˆí˜¸");
+	   JLabel psswdch2 = new JLabel("í™•ì¸");
 	   psswdch.setBounds(30, 370,80,30);
 	   psswdch2.setBounds(30,390,60,30);
 	   psswdch.setFont(inputtext);
@@ -85,20 +85,20 @@ public class sigUP extends JPanel{
 	   psswdch.setForeground(textColor);
 	   psswdch2.setForeground(textColor);
 	   
-	   JTextField nametf = new JTextField("³»¿ëÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+	   JTextField nametf = new JTextField("ë‚´ìš©ì„ ì…ë ¥í•˜ì„¸ìš”");
 	   nametf.setBounds(120,165,200,40);
 
-	   JTextField phtf = new JTextField("³»¿ëÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+	   JTextField phtf = new JTextField("ë‚´ìš©ì„ ì…ë ¥í•˜ì„¸ìš”");
 	   phtf.setBounds(120,235,200,40);
 	   
-	   JTextField pstf = new JTextField("³»¿ëÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+	   JTextField pstf = new JTextField("ë‚´ìš©ì„ ì…ë ¥í•˜ì„¸ìš”");
 	   pstf.setBounds(120,305,200,40);
 	   
-	   JTextField psch = new JTextField("³»¿ëÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+	   JTextField psch = new JTextField("ë‚´ìš©ì„ ì…ë ¥í•˜ì„¸ìš”");
 	   psch.setBounds(120,375,200,40);
 	   //===================================
 	   
-	   //======  ¹öÆ° ========================
+	   //======  ë²„íŠ¼ ========================
 	   Image cancelbtn = new ImageIcon("img/cancelbtnimg.png").getImage().getScaledInstance(140, 50, 0);
 	   Image confirmbtn = new ImageIcon("img/confirmbtnimg.png").getImage().getScaledInstance(140, 50, 0);
 	   	JButton cancel = new JButton(new ImageIcon(cancelbtn));
@@ -108,8 +108,8 @@ public class sigUP extends JPanel{
 	   
 	   //=====================================
 	   	
-	   	//====== Ã¼Å© ¹Ú½º ======================
-	   	JCheckBox checkbox = new JCheckBox("   [ÇÊ¼ö] Á¦3ÀÚ ÀÌ¿ëÀÚ µ¿ÀÇ ¾à°ü");
+	   	//====== ì²´í¬ ë°•ìŠ¤ ======================
+	   	JCheckBox checkbox = new JCheckBox("   [í•„ìˆ˜] ì œ3ì ì´ìš©ì ë™ì˜ ì•½ê´€");
 	   	checkbox.setBounds(40,450,400,30);
 	   	checkbox.setBackground(wallPapers);
 	   	checkbox.setFont(checktext);
