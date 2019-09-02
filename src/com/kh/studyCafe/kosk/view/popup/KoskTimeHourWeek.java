@@ -8,8 +8,8 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class TimeHourWeek extends JPanel{
-	public TimeHourWeek() {
+public class KoskTimeHourWeek extends JPanel{
+	public KoskTimeHourWeek() {
 		
 		
 		Font font = new Font("Noto Sans KR",Font.BOLD,15);
@@ -53,7 +53,7 @@ public class TimeHourWeek extends JPanel{
 		
 	}
 	public static void main(String[] args) {
-		new TimeHourWeek();
+		new KoskTimeHourWeek();
 	}
 
 }

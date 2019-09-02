@@ -13,9 +13,9 @@ import javax.swing.JTextField;
 import javax.swing.border.Border;
 
 
-public class GroupPanel extends JPanel{
+public class KoskGroupPanel extends JPanel{
 	
-	public GroupPanel() {
+	public KoskGroupPanel() {
 		
 		JFrame fm = new JFrame();
 		fm.setBounds(30, 40, 300, 400);
@@ -93,7 +93,7 @@ public class GroupPanel extends JPanel{
 		
 		
 		
-		Image plusimg = new ImageIcon("image/plusbtnimg.png").getImage().getScaledInstance(120, 40, 0);
+		Image plusimg = new ImageIcon("img/plusbtnimg.png").getImage().getScaledInstance(120, 40, 0);
 		JButton plus = new JButton(new ImageIcon(plusimg));
 		plus.setBounds(25, 130, 110, 40);
 		
@@ -101,7 +101,7 @@ public class GroupPanel extends JPanel{
 		JButton plus2 = new JButton(new ImageIcon(plusimg));
 		plus2.setBounds(144, 130, 110, 40);
 		
-		Image minusimg = new ImageIcon("image/minusbtnimg.png").getImage().getScaledInstance(120, 40, 0);
+		Image minusimg = new ImageIcon("img/minusbtnimg.png").getImage().getScaledInstance(120, 40, 0);
 		JButton	minus = new JButton(new ImageIcon(minusimg));
 		minus.setBounds(25, 220, 110, 40);
 		
@@ -109,12 +109,12 @@ public class GroupPanel extends JPanel{
 		JButton minus2 = new JButton(new ImageIcon(minusimg));
 		minus2.setBounds(144, 220, 110, 40);
 		
-		Image cancelimg = new ImageIcon("image/Cancelbtnimg.png").getImage().getScaledInstance(117, 50, 0);
+		Image cancelimg = new ImageIcon("img/Cancelbtnimg.png").getImage().getScaledInstance(117, 50, 0);
 		JButton cancel = new JButton(new ImageIcon(cancelimg));
 		cancel.setBounds(20, 280, 117, 50);
 		
 		
-		Image confirmimg = new ImageIcon("image/confirmbtnimg.png").getImage().getScaledInstance(117, 50, 0);
+		Image confirmimg = new ImageIcon("img/confirmbtnimg.png").getImage().getScaledInstance(117, 50, 0);
 		JButton confirm = new JButton(new ImageIcon(confirmimg));
 		confirm.setBounds(139, 280, 117, 50);
 		
@@ -138,6 +138,6 @@ public class GroupPanel extends JPanel{
 		fm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 	public static void main(String[] args) {
-		new GroupPanel();
+		new KoskGroupPanel();
 	}
 }

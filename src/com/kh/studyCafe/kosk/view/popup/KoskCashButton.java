@@ -7,8 +7,8 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-public class KoskCashButto {
-	public KoskCashButto() {
+public class KoskCashButton {
+	public KoskCashButton() {
 		
 		Font font = new Font("Noto Sans KR",Font.BOLD,15);
 		Color textColor = new Color(127,118,104);
