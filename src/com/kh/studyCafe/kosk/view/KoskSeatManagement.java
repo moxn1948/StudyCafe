@@ -1,6 +1,6 @@
 package com.kh.studyCafe.kosk.view;
 
-import java.awt.Color;
+import java.awt.Color; 
 import java.awt.Font;
 import java.awt.Image;
 
@@ -11,7 +11,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 import javax.swing.border.Border;
-
+ 
 public class KoskSeatManagement extends JPanel{
 	
 	private JPanel seatManagement;

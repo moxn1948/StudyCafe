@@ -7,10 +7,6 @@ public class Run {
 
 	public static void main(String[] args) {
 
-	  //new KoskMainFrame();
-	new KoskSeatTable();
-
-		//KoskMainFrame kmf = new KoskMainFrame();
 
 	}
 

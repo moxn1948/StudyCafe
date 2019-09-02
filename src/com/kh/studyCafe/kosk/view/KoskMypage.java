@@ -10,7 +10,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
-
+ 
 public class KoskMypage extends JPanel{
 	
 	public KoskMypage() {

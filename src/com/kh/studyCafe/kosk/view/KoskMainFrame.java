@@ -6,7 +6,7 @@ public class KoskMainFrame extends JFrame{
 	public KoskMainFrame() {
 		this.setSize(360,640);
 		
-		new Login(this);
+		new KoskLogin(this);
 		
 		this.setVisible(true);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

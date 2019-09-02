@@ -14,7 +14,7 @@ import javax.swing.border.Border;
 
 public class GroupPanel extends JPanel{
 	
-	public GroupPanel() {
+	public GroupPanel() { 
 		
 		JFrame fm = new JFrame();
 		fm.setBounds(30, 40, 300, 400);
