@@ -47,12 +47,12 @@ public class AdmMoveGrp extends JPanel implements ActionListener{
 //		closeBtn.setLocation(600,543); 이건 걍 해본거..
 		closeBtn.setBounds(45,120,326,50);
 		
-		closeBtn.setBackground(new Color(18,177,157)); //컬러
+		closeBtn.setBackground(new Color(189, 177, 157)); //컬러
 		
-		closeBtn.setFont(new Font("맑은 고딕",Font.BOLD,18)); 	
+		closeBtn.setFont(new Font("맑은 고딕",Font.BOLD,18)); 	 //볼드??
 		
 		closeBtn.setForeground(Color.WHITE);
-		
+		closeBtn.setBorderPainted(false);
 		
 		
 		//패널에 올리기

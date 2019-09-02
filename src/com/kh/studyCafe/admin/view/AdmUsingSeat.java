@@ -31,9 +31,10 @@ public class AdmUsingSeat extends JPanel implements ActionListener {
 		JButton closeBtn = new JButton("Close");
 		
 		closeBtn.setBounds(45,120,326,50);
-		closeBtn.setBackground(new Color(8,177,157));
+		closeBtn.setBackground(new Color(189, 177, 157));
 		closeBtn.setFont(new Font("맑은 고딕",Font.BOLD,18));
 		closeBtn.setForeground(Color.WHITE);
+		closeBtn.setBorderPainted(false);
 	
 		
 		//패널에 올리기
