@@ -12,11 +12,11 @@ import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 import javax.swing.border.Border;
 
-public class SeatManagement extends JPanel{
+public class KoskSeatManagement extends JPanel{
 	
 	private JPanel seatManagement;
 	
-	public SeatManagement() {
+	public KoskSeatManagement() {
 		
 		//======= 컬러 설정 ====	
 		

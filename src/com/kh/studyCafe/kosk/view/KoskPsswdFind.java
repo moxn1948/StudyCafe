@@ -11,9 +11,9 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 
-public class psswdfind extends JPanel{
+public class KoskPsswdFind extends JPanel{
 	
-	public psswdfind() {
+	public KoskPsswdFind() {
 		
 		// ============= ���� ===============
 		Color wallPapers = new Color(239,234,222);

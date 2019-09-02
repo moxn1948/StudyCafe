@@ -14,56 +14,56 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 
-public class Login extends JPanel{
+public class KoskLogin extends JPanel{
 	private KoskMainFrame mf;
 	private JPanel mainpage;
 	
-	public Login(KoskMainFrame mf) {
+	public KoskLogin(KoskMainFrame mf) {
 		this.mf = mf; 
 		mainpage = this;
 		
-		//======= �� ���� ====
+		//======= �깋�긽 ====
 		
-		Color wallPapers = new Color(239,234,222);
-		Color textColor = new Color(127,118,104);
+		Color wallPapers = new Color(239,234,222); //諛곌꼍�깋
+		Color textColor = new Color(127,118,104); //湲��옄�깋
 		
 		//=================
 		
 		
-		//================ Frame ���� ======================
+		//================ Frame 占쏙옙占쏙옙 ======================
 		this.setSize(360,640);
 		this.setLayout(null);
 		this.setBackground(wallPapers);
 		//================================================
 		
-		//============== font ���� =========
+		//============== font 占쏙옙占쏙옙 =========
 		
 		Font f1 = new Font("Noto Sans KR",Font.BOLD,25);
 		
 		//============================
 		
-		// panel ũ�� ����
+		// panel 크占쏙옙 占쏙옙占쏙옙
 		
-		//============== ���� ���� �κ� ========================
+		//============== 占쏙옙占쏙옙 占쏙옙占쏙옙 占싸븝옙 ========================
 		
-		JLabel title1 = new JLabel("스터디카페 다니고");
-		JLabel title2 = new JLabel("나의 성공시대");
+		JLabel title1 = new JLabel("스터디카페를 다니고");
+		JLabel title2 = new JLabel("나의 성공 시대 ");
 		JLabel title3 = new JLabel("시작됐다");
 		
-		title1.setBounds(65,150,600,60);// ũ�� ����
-		title1.setForeground(textColor);// ����
+		title1.setBounds(65,150,600,60);// 크占쏙옙 占쏙옙占쏙옙
+		title1.setForeground(textColor);// 占쏙옙占쏙옙
 		title2.setBounds(65,180,600,60);
 		title2.setForeground(textColor);
 		title3.setBounds(65,210,600,60);
 		title3.setForeground(textColor);
 		
-		// font ����
+		// font 占쏙옙占쏙옙
 		title1.setFont(f1);
 		title2.setFont(f1);
 		title3.setFont(f1);
 		//=================================================
 		
-		//==================== �ؽ�Ʈ �ʵ� ���� ==============
+		//==================== 占쌔쏙옙트 占십듸옙 占쏙옙占쏙옙 ==============
 		
 		JTextField phonenumber = new JTextField("Phone Number");
 		JTextField password = new JTextField("password.");
@@ -77,7 +77,7 @@ public class Login extends JPanel{
 		
 		//===================================================
 		
-		//===============  ��ư ���� =================
+		//===============  占쏙옙튼 占쏙옙占쏙옙 =================
 		
 		Image loginicon = new ImageIcon("img/loginimg.png").getImage().getScaledInstance(230, 50, 0);
 		Image singUpicon = new ImageIcon("img/singUpimg.png").getImage().getScaledInstance(110, 40, 0);
@@ -88,7 +88,7 @@ public class Login extends JPanel{
 		JButton findPwd = new JButton(new ImageIcon(findPwdicon));
 		findPwd.setBorderPainted(false);
 		
-		loginButton.setBounds(65,365,230,50); //�α��� ��ư ũ�� ����
+		loginButton.setBounds(65,365,230,50); //占싸깍옙占쏙옙 占쏙옙튼 크占쏙옙 占쏙옙占쏙옙
 		signUp.setBounds(65,420,110,40);
 		findPwd.setBounds(185,420,110,40);
 		
@@ -110,7 +110,7 @@ public class Login extends JPanel{
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				ChangePanel.changePanel(mf, mainpage, new mypage());
+				ChangePanel.changePanel(mf, mainpage, new KoskMypage());
 			}
 		});
 	
@@ -121,7 +121,7 @@ public class Login extends JPanel{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			ChangePanel.changePanel(mf, mainpage, new Payment());
+			ChangePanel.changePanel(mf, mainpage, new GroupPanel());
 			
 		}	
 	}

@@ -14,10 +14,10 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 
-public class sigUP extends JPanel{
+public class KoskSigUp extends JPanel{
 	private KoskMainFrame mf;
 	private JPanel sigup;
-	public sigUP() {
+	public KoskSigUp() {
 		//========= JFrame ���� ============
 		this.setSize(360,640);
 		//===============================
@@ -137,7 +137,7 @@ public class sigUP extends JPanel{
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				ChangePanel.changePanel(mf,sigup, new Login(mf));
+				ChangePanel.changePanel(mf,sigup, new KoskLogin(mf));
 				
 			}
 		});

@@ -11,9 +11,9 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 
-public class mypage extends JPanel{
+public class KoskMypage extends JPanel{
 	
-	public mypage() {
+	public KoskMypage() {
 		this.setSize(360,640);
 		
 		//===== ���� ���� =====
@@ -137,7 +137,6 @@ public class mypage extends JPanel{
 		   Image findimg = new ImageIcon("img/okbtnimg.png").getImage().getScaledInstance(100, 40, 0);
 		   
 		   JButton find = new JButton(new ImageIcon(findimg));
-		   find.setBorderPainted(false);
 		   find.setBounds(220,530,100,40);
 		
 		
