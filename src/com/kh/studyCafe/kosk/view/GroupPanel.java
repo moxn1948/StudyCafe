@@ -13,7 +13,7 @@ import javax.swing.JTextField;
 import javax.swing.border.Border;
 
 public class GroupPanel extends JPanel{
-	
+	 
 	public GroupPanel() { 
 		
 		JFrame fm = new JFrame();

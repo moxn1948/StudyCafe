@@ -65,7 +65,7 @@ public class KoskSeatManagement extends JPanel{
 		Image exbtnimg = new ImageIcon("img/exbtnimg.png").getImage().getScaledInstance(95, 96, 0);
 		JButton ex = new JButton(new ImageIcon(exbtnimg));
 		ex.setBounds(122,200,95,96);
-		
+		 
 		Image setmvimg = new ImageIcon("img/seatmvbtnimg.png").getImage().getScaledInstance(95, 96, 0);
 		JButton seatmv = new JButton(new ImageIcon(setmvimg));
 		seatmv.setBounds(225, 200, 95, 96);

@@ -13,7 +13,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
- 
+  
 public class KoskSigUp extends JPanel{
 	private KoskMainFrame mf;
 	private JPanel sigup;
